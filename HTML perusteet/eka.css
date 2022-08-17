@@ -1,0 +1,10 @@
+.liha {
+  font-weight: bolder;
+  color: navy;
+}
+body{
+  margin: 10px;
+}
+table, th, td {
+  border: 1px solid black;
+}
