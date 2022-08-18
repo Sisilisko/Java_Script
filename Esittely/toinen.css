@@ -1,0 +1,55 @@
+* {
+  font-family: Calibri;
+}
+body {
+  background-color: LightGray;
+}
+main {
+  margin: 20px auto;
+  background-color: white;
+  max-width: 1100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1, #terveus {
+  font-size: 30px;
+}
+h2, h3, h4, h5, h6 {
+  font-size: 20px;
+  margin: 30px auto 5px auto;
+}
+p {
+  margin: 0;
+}
+section{
+  width: 70%;
+  padding: 30px 20px;
+  margin: 0 auto;
+position: relative;
+}
+table, th, td {
+  border: 2px dotted black;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: LightGray;
+}
+th, td {
+  padding: 5px 10px;
+}
+.centered {
+  text-align: center;
+}
+.table-container {
+  display: grid;
+}
+#right {
+  float: right;
+  height: 200px;
+}
+img {
+  padding: 12px;
+}
+#left {
+  float: left;
+  height: 200px;
+}
