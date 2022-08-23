@@ -4,58 +4,128 @@
 }
 html {
   color: white;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 body {
-    background-image: url(https://i.pinimg.com/originals/ef/de/ae/efdeae709ea42996e8413c58b4cf39fb.jpg);
+  background-image: url(https://images.wallpaperscraft.ru/image/single/tekstura_piatna_tsarapiny_130574_1280x720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 main {
-  margin: 20px auto;
+  margin: 10px auto;
   max-width: 1300px;
+  margin-top: 191px;
+  background-color: #272C34;
+  border-radius: 5px;
 }
 header {
   background-color: black;
-  float: right;
-  margin-right: 5%;
-  margin-top: 50px;
+  top: 0;
+  position: fixed;
+  max-width: 1300px;
+  align-items: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
-.nav-link {
+#title {
+  font-size: 80px;
+  font-family: 'Aboreto', cursive;
+  font-weight: bold;
+  text-align: center;
+  background: #C4C4C6;
   text-transform: uppercase;
-  color: grey;
-  font-size: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+
+  -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-background-clip: text;
+-moz-text-fill-color: transparent;
 }
-a {
-    text-decoration: none;
-    margin-left: 80px;
-}
-#preview {
-  background-color: black;
+/* The progress container (grey background) */
+.progress-container {
   width: 100%;
-  height: 100vh;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+section:first-child {
+  width: calc(100% - 80px);
+  padding: 40px;
+  padding-top: 70px
 }
 .about-hero {
   display: flex;
   position: relative;
   width: 100%;
-  top: 100px;
+  top: 30px;
+  align-items: center;
 }
-.left > h1 {
-  font-size: 100px;
-  font-family: 'Caveat Brush', cursive;
-  transform: rotate(-10deg);
+.hero-title {
+  font-size: 55px;
+    font-family: 'Aboreto', cursive;
   font-weight: normal;
-  text-align: center;
-  color: Gray;
-  margin-bottom: 50px;
+  color: #C4C4C6;
+  margin-bottom: 25px;
+  line-height: 60px;
 }
-.left {
-  margin-right: 15px
+.hero-title > span {
+  font-size: 45px;
 }
 .about {
   font-size: 20px;
   font-weight: 100;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+  color: #0B75D2;
+}
+a:hover {
+  color: #4caf50;
+}
+.hero-img.right {
+  margin-right: -8%;
+}
+.hero-img.left {
+  margin-left: -8%;
+}
+.hero-img {
+  align-items: center;
+  transform: rotate(-10deg);
+}
+img {
+  border: 10px solid black;
+  border-radius: 14px;
+}
+.hero-img.left {
+  margin-right: 59px;
+}
+section {
+  height: 70vh;
+  padding: 40px;
 }
 .right {
-  display: flex;
-    align-items: center;
+  text-align: left;
+}
+.left {
+  text-align: right;
+  margin-right: 45px;
+}
+footer {
+  height: 50px
+}
+.copyright {
+  text-align: center;
+  line-height: 50px
 }
