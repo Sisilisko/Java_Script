@@ -1,0 +1,30 @@
+body {
+  width: 800px;
+  margin: auto;
+}
+header, footer {
+  background-color: #AAC984;
+  padding: 5px 0 10px 10px;
+}
+header > h1 {
+  color: #223E00;
+}
+nav {
+  width: 200px;
+  margin: auto;
+  background-color: #EBEDE8;
+}
+aside {
+  float: right;
+  background-color: #3C6C01;
+}
+aside > p {
+  padding: 10px;
+}
+section {
+  background-color: #EBEDE8;
+  width: 620px;
+}
+aside, section {
+  padding: 5px 0 10px 10px;
+}
