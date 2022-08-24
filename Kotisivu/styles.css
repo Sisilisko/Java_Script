@@ -1,0 +1,37 @@
+body {
+  width: 1100px;
+  margin: auto;
+}
+header, footer {
+  background-color: #AAC984;
+  padding: 5px 10px 10px 10px;
+}
+header > h1 {
+  color: #223E00;
+}
+nav {
+
+  margin: auto;
+  background-color: #EBEDE8;
+}
+aside {
+  float: right;
+  background-color: #3C6C01;
+  width: calc(800px - 620px)
+}
+aside > p {
+  padding: 10px;
+}
+article {
+  margin: 15px 0 15px 0;
+  width: 80%;
+}
+section {
+  background-color: #EBEDE8;
+}
+aside, section {
+  padding: 5px 10px 10px 10px;
+}
+.lahde {
+  text-align: right;
+}
