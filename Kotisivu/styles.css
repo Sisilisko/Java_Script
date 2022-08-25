@@ -1,36 +1,89 @@
+html {
+  overflow-y: scroll;
+}
 body {
   width: 1100px;
-  margin: auto;
+  margin: 10px auto;
+  color: #223E00;
+  font-size: 14px;
+  font-family: 'Tahoma';
+  line-height: 22px;
+
 }
 header, footer {
   background-color: #AAC984;
-  padding: 5px 10px 10px 10px;
+  padding: 10px 20px 10px 20px;
+  position: relative;
+  font-family: 'IM Fell DW Pica SC', serif;
+  background-image: url(https://cdn-wordpress-info.futurelearn.com/wp-content/uploads/FL290_Rome_blog_banner.jpg);
+  background-position: center;
+  font-size: 15px;
 }
 header > h1 {
-  color: #223E00;
+  color: black;
+  font-size: 50px;
+  font-weight: 100;
+}
+main {
+  width: 1070px;
+  margin: auto;
+}
+h2 {
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-weight: 100;
 }
 nav {
-
-  margin: auto;
+  padding: 10px;
+  position: absolute;
   background-color: #EBEDE8;
+  right: 10px;
+  bottom: 10px;
+  border: 1px solid black;
+}
+nav > a {
+  text-decoration: none;
+  color: black;
+  margin: 10px 8px 10px 8px;
+
 }
 aside {
   float: right;
-  background-color: #3C6C01;
-  width: calc(800px - 620px)
+  background-color: #AAC984;
+  width: 20%;
+  font-family: 'IM Fell DW Pica SC', serif;
 }
 aside > p {
   padding: 10px;
 }
+aside > ul {
+  margin-left: -18px;
+}
 article {
   margin: 15px 0 15px 0;
-  width: 80%;
+  width: 77%;
 }
 section {
   background-color: #EBEDE8;
 }
-aside, section {
+aside {
   padding: 5px 10px 10px 10px;
+}
+section {
+  padding: 5px 15px 10px 15px;
+}
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 400px;
+    margin: auto;
+}
+figcaption {
+    background-color: #AAC984;
+    font: smaller sans-serif;
+    padding: 3px;
+    text-align: center;
 }
 .lahde {
   text-align: right;
