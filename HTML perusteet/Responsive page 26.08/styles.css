@@ -1,0 +1,116 @@
+@font-face {
+  font-family: SF Mono Regular;
+  src: url("SFMonoRegular.otf") format("opentype");
+}
+body {
+  font-family: 'SF Mono Regular';
+  letter-spacing: -0.5px;
+}
+header {
+  width: 100%;
+  text-align: center;
+}
+#logo {
+  max-width: 100%;
+}
+#main-hr {
+  background: #00A3D9;
+  height: 2px;
+  border: 1px solid #BFE8F5;
+}
+main {
+  padding: 2%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 100px;
+  align-items: start;
+  padding: 1%;
+}
+ul {
+  margin: 0;
+  padding-left: 6%;
+}
+main > h1, main > h3 {
+  text-align: center;
+
+}
+article > h3 {
+  margin-bottom: 0;
+  line-height: 37px;
+}
+h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.number {
+  float: left;
+  margin-right: 5px;
+  height: 37px;
+}
+aside {
+  background-color: #F4F4F4;
+  border: 2px solid #00A3D9;
+  outline: 1px solid #3FBAE2;
+  border-radius: 5px;
+  padding: 15px;
+}
+form {
+  display: grid;
+  max-width: 350px;
+  margin-bottom: 19px;
+
+}
+input {
+  float: right;
+  clear: both;
+  margin-bottom: 7px;
+  margin: 1px;
+}
+label {
+  font-weight: bold;
+  padding: 1px;
+}
+button {
+  background: #FF6429;
+  background-color: #FF6429;
+  border: none;
+  float: right;
+  padding: 15px 20px;
+  border-radius: 3px;
+  margin-top: -10px;
+}
+#hr-form {
+  margin-top: 43px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#testimonials {
+  display: inline-flex;
+  align-items: center;
+}
+#testimonials > img {
+  margin-right: 2%;
+}
+footer {
+  text-align: center;
+}
+@media only screen and (max-width:900px) {
+  .grid-container {
+      grid-template-columns: 100%;
+  }
+  article {
+    background-color: #EEEEEE;
+    border-radius: 5px;
+    padding: 3%;
+  }
+  li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  aside {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
