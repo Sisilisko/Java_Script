@@ -176,7 +176,13 @@ a {
     flex-direction: column;
   }
 }
-
+#images img {
+  max-width: 100%;
+}
+.book-img {
+   width: 250px;
+   
+ }
 @media only screen and (max-width: 600px) {
   .hero-banner {
     width: 79%;
