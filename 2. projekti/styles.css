@@ -19,7 +19,8 @@ h1 {
 }
 #image {
   min-width: 300px;
-  width: 33rem
+  width: 33rem;
+  max-width: 100%;
 }
 h1 {
   background-color: yellow;
@@ -34,17 +35,19 @@ figure {
   left:0;
 right:0;
 margin: 0 0 10px 0;
-z-index: 3
+z-index: 5
 }
 #tribute-link {
   display: block;
   text-align: end;
+  z-index: 999
 }
 #tribute {
   width: 35%;
   float: left;
-  z-index: 5;
-  padding: 5% 0 0 10px
+  z-index: 999;
+  padding: 5% 0 0 10px;
+  position: absolute;
 }
 
 #fone {
@@ -54,10 +57,18 @@ z-index: 3
 }
 @media only screen and (max-width:950px) {
   #tribute {
-    margin-top: 55rem;
-    width: 100%;
+    margin-top: 58rem;
+    pading-bottom: 20px;
+    width: 95%;
     float: unset;
     position: absolute;
-    padding: 0
+    padding: 0;
+    margin-bottom: 1rem;
+    background-color: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  #tribute-link {
+    margin-bottom: 2rem
   }
 }
