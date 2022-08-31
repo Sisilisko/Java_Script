@@ -1,4 +1,4 @@
-# Java_Script :wave: :woman_technologist:
+# Java_Script :woman_technologist: :fallen_leaf:
 
 This is my first repo at KEUDA (August, 2022)
 
