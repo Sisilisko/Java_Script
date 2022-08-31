@@ -1,6 +1,6 @@
-# Java_Script
+# Java_Script :wave: :woman_technologist:
 
-This is my first repo at KEUDA (August, 2022) :wave: :woman_technologist:
+This is my first repo at KEUDA (August, 2022)
 
 Kotisivu: https://viktoriia-code.github.io/Java_Script/Kotisivu/index.html
 
