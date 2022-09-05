@@ -57,20 +57,25 @@ aside {
   padding: 15px;
 }
 form {
-  display: grid;
+
   max-width: 350px;
   margin-bottom: 19px;
 
 }
 input {
-  float: right;
-  clear: both;
-  margin-bottom: 7px;
-  margin: 2px;
+  height: 25px;
+width: 50%;
+border: 1px solid #CCC;
+border-radius: 5px;
 }
 label {
   font-weight: bold;
   padding: 1px;
+  width: 120px;
+  display: inline-block;
+}
+#constact-form div {
+  margin-bottom: 20px;
 }
 button {
   background: #FF6429;
