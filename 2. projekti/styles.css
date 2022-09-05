@@ -36,7 +36,12 @@ figure {
 right:0;
 margin: 0 0 10px 0;
 z-index: 5;
-top: 7%
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%); /* IE 9 */
+-webkit-transform: translate(-50%, -50%);
+width: 100%
 }
 #tribute-link {
   display: block;
@@ -71,8 +76,5 @@ top: 7%
   }
   #tribute-link {
     margin-bottom: 2rem
-  }
-  figure {
-    top: 0
   }
 }
