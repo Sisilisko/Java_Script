@@ -24,7 +24,7 @@ main {
 .grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-column-gap: 100px;
+  grid-column-gap: 50px;
   align-items: start;
   padding: 1%;
 }
@@ -76,6 +76,8 @@ label {
 }
 #constact-form div {
   margin-bottom: 20px;
+  width: max-content;
+  display: inline-block;
 }
 button {
   background: #FF6429;
