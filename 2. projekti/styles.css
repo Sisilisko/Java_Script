@@ -1,7 +1,11 @@
 body {
   font-family: 'Press Start 2P', cursive;
   font-size: 18px;
-  margin: 0
+  margin: 0;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+-webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+-o-background-size: 100%; /* Opera 9.6+ */
+background-size: 100%; /* Современные браузеры */
 }
 main {
 
@@ -19,29 +23,49 @@ h1 {
 }
 #image {
   min-width: 300px;
-  width: 33rem;
+  width: 32rem;
   max-width: 100%;
+  animation: float 6s ease-in-out infinite;
+}
+figcaption {
+  background-color: yellow;
+}
+#fig-title {
+  font-size: 45px;
 }
 h1 {
   background-color: yellow;
   font-size: 33px;
 }
-figcaption h1 {
-  font-size: 45px
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
+
 figure {
   text-align: center;
   position: absolute;
   left:0;
 right:0;
-margin: 0 0 10px 0;
+margin: 0 0 0 0;
+
 z-index: 5;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%); /* IE 9 */
 -webkit-transform: translate(-50%, -50%);
-width: 100%
+width: 100%;
+height: auto;
+overflow: hidden;
 }
 #tribute-link {
   display: block;
@@ -63,8 +87,8 @@ width: 100%
 }
 @media only screen and (max-width:950px) {
   #tribute {
-    margin-top: 61rem;
-    pading-bottom: 20px;
+    margin-top: 58rem;
+    pading-bottom: 30px;
     width: 95%;
     float: unset;
     position: absolute;
@@ -76,5 +100,31 @@ width: 100%
   }
   #tribute-link {
     margin-bottom: 2rem
+  }
+  figure {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%);
+  }
+}
+@media only screen and (max-width:622px) {
+  figure {
+    top: 0%;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%); /* IE 9 */
+    -webkit-transform: translate(-50%, 0%);
+    position: relative;
+  }
+  #tribute {
+    transform: translate(-50%, 0%);
+    position: relative;
+    margin-top: 0;
+    margin-top: 20px
+  }
+  #fone {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
