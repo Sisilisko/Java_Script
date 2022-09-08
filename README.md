@@ -2,7 +2,7 @@
 
 This is my first repo at KEUDA (August, 2022)
 
-#### :books: HTML + CSS
+### :books: HTML + CSS
 
 :scroll: First page (esittely): https://viktoriia-code.github.io/Java_Script/Esittely/
 
