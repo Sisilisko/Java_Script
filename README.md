@@ -2,9 +2,9 @@
 
 This is my first repo at KEUDA (August, 2022)
 
-:pencil2: List of 10 best Finnish writers: https://viktoriia-code.github.io/Java_Script/HTML/toinen%20sivu%2022.08/
+:black_nib: List of 10 best Finnish writers: https://viktoriia-code.github.io/Java_Script/HTML/toinen%20sivu%2022.08/
 
-:pencil2: First page (esittely): https://viktoriia-code.github.io/Java_Script/Esittely/
+:black_nib: First page (esittely): https://viktoriia-code.github.io/Java_Script/Esittely/
 
 :pencil2: Kotisivu: https://viktoriia-code.github.io/Java_Script/Kotisivu/index.html
 
