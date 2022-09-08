@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <main>
@@ -17,7 +18,7 @@
         <input type="text" name="userId" id="userId" class="grayInput"><br>
         <label for="password" class="left">Salasana:</label>
         <input type="password" name="password" id="password" class="grayInput"><br>
-
+<div class="container">
         <div class="left">
           Sukupuoli:
         </div>
@@ -29,14 +30,17 @@
 
         <br>
         <input type="radio" name="gender" id="female" value="Female"><label for="gender">Nainen</label>
-        <br></div><br>
+        <br></div></div>
 
+      <div class="container">
         <div class="left">
           Palaute
         </div>
         <textarea name="feedback" rows="6" cols="20"></textarea>
-        <br>
+        </div>
 
+
+<div class="container">
         <label for="level" class="left">Jäsenyystaso</label>
         <select class="level" name="level">
           <option value="">Valitse yksi</option>
@@ -44,10 +48,10 @@
           <option value="intermediate">Intermediate</option>
           <option value="advanced">Advanced</option>
         </select>
-        <br>
+      </div>
 
 
-
+<div class="container">
         <div class="left">
           Valitse osaamisalueet
         </div>
@@ -55,7 +59,8 @@
         <input type="checkbox" name="skill" value="PHP"><label for="skill">PHP</label><br>
         <input type="checkbox" name="skill" value="HTML"><label for="skill">HTML</label><br>
         <input type="checkbox" name="skill" value="CSS"><label for="skill">CSS</label>
-        </div><br>
+      </div></div>
+
 
         <div class="left">
 
