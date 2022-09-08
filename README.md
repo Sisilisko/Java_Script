@@ -7,6 +7,7 @@ This is my first repo at KEUDA (August, 2022)
 :mortar_board: First page (esittely): https://viktoriia-code.github.io/Java_Script/Esittely/
 
 :mortar_board: Kotisivu: https://viktoriia-code.github.io/Java_Script/Kotisivu/index.html
+
 :mortar_board: Responsive page: https://viktoriia-code.github.io/Java_Script/HTML%20perusteet/Responsive%20page%2026.08/
 
 :mortar_board: Forms (08.09): https://viktoriia-code.github.io/Java_Script/HTML%20perusteet/Forms%208.09.2022/
