@@ -6,11 +6,11 @@ This is my first repo at KEUDA (August, 2022)
 
 :black_nib: First page (esittely): https://viktoriia-code.github.io/Java_Script/Esittely/
 
-:pencil2: Kotisivu: https://viktoriia-code.github.io/Java_Script/Kotisivu/index.html
+:black_nib: Kotisivu: https://viktoriia-code.github.io/Java_Script/Kotisivu/index.html
 
-:pencil2: Responsive page: https://viktoriia-code.github.io/Java_Script/HTML/Responsive%20page%2026.08/
+:black_nib: Responsive page: https://viktoriia-code.github.io/Java_Script/HTML/Responsive%20page%2026.08/
 
-:pencil2: Forms (08.09): https://viktoriia-code.github.io/Java_Script/HTML/Forms%208.09.2022/
+:black_nib: Forms (08.09): https://viktoriia-code.github.io/Java_Script/HTML/Forms%208.09.2022/
   
 :heavy_check_mark: 1. projekti (about stoicism): https://viktoriia-code.github.io/Java_Script/1.%20projekti/
 
