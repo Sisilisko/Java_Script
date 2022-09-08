@@ -1,0 +1,29 @@
+ body, html {
+   height: 100%;
+ }
+main {
+  background-color: #ffffe0;
+  margin: auto;
+  padding: 40px;
+  width: 400px;
+}
+h1 {
+  text-align: center;
+}
+.grayInput {
+  background-color: #d3d3d3;
+  margin-bottom: 5px;
+  border-radius: 20px;
+}
+.wrapper {
+  display: inline-block;
+}
+.left {
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+input, select, textarea {
+  margin-bottom: 5px;
+}
