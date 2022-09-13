@@ -1,0 +1,111 @@
+#tbl-h13 th, #tbl-h13 td, #tbl-har14 th, #tbl-har14 td {
+  border: 1px solid black
+}
+#tbl-h13, #tbl-har14 {
+  border-collapse: collapse
+}
+#tbl-har14 tr:first-child {
+  background-color: #F00000;
+  color: white;
+}
+#tbl-har14 tr:nth-child(even) {
+  background-color: #FFF000
+}
+#tbl-har15 {
+  width: 450px;
+  border-collapse: collapse;
+}
+#tbl-har15 thead th, #tbl-har15 thead td {
+  background-color: #cbc9c9;
+  font-weight: bold;
+}
+#tbl-har15 td {
+  border: 1px solid #999;
+  text-align: right;
+}
+#tbl-har15 tbody tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+#tbl-har15 tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+#tbl-har15 tfoot td {
+  background-color: #cbc9c9;
+  font-weight: bold;
+}
+#tbl-har15 th {
+  text-align:left;
+}
+img {
+  height: 180px;
+}
+#tbl-8, #tbl-8 td, #tbl-8 th {
+  border: solid 1px grey
+}
+.img-har9 {
+  clear: both;
+  float: left;
+}
+#img-10-left {
+  float:left;
+}
+#img-10-right {
+  clear:both;
+  float:right
+}
+#img-11-left {
+  float:left;
+  margin:10px
+}
+#img-11-right {
+  clear:both;
+  float:right;
+  margin:10px
+}
+#tbl-12 {
+  border: 1px solid black;
+}
+#h-16-st-1 {
+  color: DarkGreen;
+}
+#h-16-st-2 {
+  color:red;
+}
+#h-16-st-3 {
+  color:DarkGreen;
+  font-size:28px;
+}
+#h-16-st-4 {
+  color:DarkGreen;
+  font-size:35px;
+}
+#h-16-st-5 {
+  color:orange;
+  font-size:35px;
+}
+#h-16-st-6 {
+  color:lightBlue;
+  font-size:28px;
+}
+#h-16-st-7 {
+  color:purple;
+  font-size:20px;
+}
+#h-16-st-8 {
+  font-family: 'Germania One', cursive;
+}
+#h-16-st-9 {
+  font-family: 'Pacifico', cursive;
+}
+#h-16-st-10 {
+  font-family: 'Fresca', sans-serif;
+}
+#h-16-st-11 {
+  font-family: 'Secular One', sans-serif;
+}
+#h-16-st-12 {
+  font-family: 'Indie Flower', sans-serif;
+}
+#h-16-st-13 {
+  font-family: 'Lobster', cursive;
+}
