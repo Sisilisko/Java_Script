@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="lomake.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+    <div class="container">
+      <table>
+        <tr>
+          <td><label for="etunimi">Anna etunimesi:</label></td>
+          <td><input type="text" name="" id="etunimi" value=""></td>
+        </tr>
+        <tr>
+          <td><label for="sukunimi">Anna sukunimesi:</label></td>
+          <td><input type="text" name="" id="sukunimi" value=""></td>
+        </tr>
+      </table>
+    </div>
+    <div class="container">
+      <p>Tulin tänään kouluun:</p>
+      <input type="radio" name="transport" id="jalat" value="jalan"><label for="jalat">Jalan</label><br>
+      <input type="radio" name="transport" id="auto" value="autolla"><label for="auto">Autolla</label><br>
+      <input type="radio" name="transport" id="juna" value="junalla"><label for="juna">Junalla</label><br>
+      <input type="radio" name="transport" id="bussi" value="bussilla"><label for="bussi">Bussilla</label><br>
+      <input type="radio" name="transport" id="mopo" value="mopolla"><label for="mopo">Mopolla</label><br>
+      <input type="radio" name="transport" id="uida" value="uiden"><label for="uida">Uiden</label>
+    </div>
+    <div class="container">
+      <p>Lempituntini koulussa on:</p>
+      <select name="lempitunti" id="lempitunti">
+        <option value="">(Valitse alta oikea vaihtoehto)</option>
+        <option value="Tietotekniikka">Tietotekniikka</option>
+        <option value="Kielet">Kielet</option>
+        <option value="Matematiikka">Matematiikka</option>
+        <option value="Yhteiskunta-aineet">Yhteiskunta-aineet</option>
+        <option value="Ruokatunti">Ruokatunti</option>
+      </select><br>
+      <button type="button" name="button" onclick="tulosta()">Tulosta</button>
+    </div>
+    </form>
+    <p id="v1"></p>
+  </body>
+</html>

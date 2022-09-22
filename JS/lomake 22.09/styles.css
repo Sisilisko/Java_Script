@@ -1,0 +1,17 @@
+.container {
+  margin: 10px auto;
+  background-color: LemonChiffon;
+  max-width: 350px;
+  padding: 5px 20px;
+  border: 1px solid Gray;
+  line-height: 25px;
+}
+#v1 {
+  margin: 10px auto;
+  max-width: 350px;
+  padding: 5px 20px;
+  line-height: 25px;
+  background-color: black;
+  color: white;
+  padding: 0 20px;
+}
