@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Viikon 2 ensimmäiset harjoitukset</h1>
+    <div class="container">
+      <section class="tehtava-container">
+        <h2>Tehtävä 1</h2>
+        <p>Tee ohjelma, joka pyytää käyttäjältä kolmea numeroa ja laittaa ne järjestykseen</p>
+        <form class="" action="index.html" method="post">
+          <label for="luku1">Anna 1. numero: </label>
+          <input type="text" name="" value="" id="luku1">
+          <label for="luku2">Anna 2. numero: </label>
+          <input type="text" name="" value="" id="luku2">
+          <label for="luku3">Anna 3. numero: </label>
+          <input type="text" name="" value="" id="luku3">
+          <button type="button" name="button" onclick="kolme1()">Etsi suurin numero</button>
+        </form>
+        <p id="t1"></p>
+      </section>
+
+      <section class="tehtava-container">
+        <h2>Tehtävä 2</h2>
+        <p>Kirjoita ohjelma, joka ottaa vastaan 5 lukua ja etsii niistä suurimman</p>
+        <form class="" action="index.html" method="post">
+          <label for="t2-luku1">Anna 1. luku: </label>
+          <input type="text" name="" value="" id="t2-luku1">
+          <label for="t2-luku2">Anna 2. luku: </label>
+          <input type="text" name="" value="" id="t2-luku2">
+          <label for="t2-luku3">Anna 3. luku: </label>
+          <input type="text" name="" value="" id="t2-luku3">
+          <label fort2-luku4">Anna 4. luku: </label>
+          <input type="text" name="" value="" id="t2-luku4">
+          <label for="t2-luku5">Anna 5. luku: </label>
+          <input type="text" name="" value="" id="t2-luku5">
+          <button type="button" name="button" onclick="suurinNumero()">Etsi suurin numero</button>
+        </form>
+        <p id="t2"></p>
+      </section>
+
+      <section class="tehtava-container">
+        <h2>Tehtävä 3</h2>
+        <p>Kirjoita ohjelma, joka kertoo, onko antamasi luku parillinen vai pariton</p>
+        <form class="" action="index.html" method="post">
+          <label for="t3-luku">Anna 1. luku: </label>
+          <input type="text" name="" value="" id="t3-luku">
+          <button type="button" name="button" onclick="pariNumero()">Tarkista</button>
+        </form>
+        <p id="t3"></p>
+      </section>
+
+      <section class="tehtava-container">
+        <h2>Tehtävä 4</h2>
+        <p>Kirjoita ohjelma, joka kysyy käyttäjän ikää ja tarkistaa, mitä ajoneuvoa saa ajaa: /<16v - polkupyörää, /<18v - mopoa, muutoin autoa</p>
+        <form class="" action="index.html" method="post">
+          <label for="t4-luku">Anna 1. luku: </label>
+          <input type="text" name="" value="" id="t4-luku">
+          <button type="button" name="button" onclick="tarkistaIka()">Tarkista</button>
+        </form>
+        <p id="t4"></p>
+      </section>
+
+      <section class="tehtava-container">
+        <h2>Tehtävä 5</h2>
+        <p>Kirjoita ohjelma, joka kääntää "Hei maailma" - tekstin valitulle kielelle (englanti, ruotsi, espanja)</p>
+        <form class="" action="index.html" method="post">
+          <label for="kieli">Valitse kieli</label><br>
+          <select name="kieli" id="kieli">
+            <option value="Englanti">Englanti</option>
+            <option value="Ruotsi">Ruotsi</option>
+            <option value="Espanja">Espanja</option>
+          </select>
+          <button type="button" name="button" onclick="translateText()">Käännä</button>
+        </form>
+        <p id="t5"></p>
+      </section>
+
+    </div>
+  </body>
+</html>
