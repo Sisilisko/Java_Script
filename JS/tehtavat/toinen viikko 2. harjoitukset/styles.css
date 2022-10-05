@@ -12,7 +12,7 @@ h1, h2 {
   text-align: center;
 }
 .tehtava-container {
-  width: 300px;
+  width: fit-content;
   background-color: SeaGreen;
   padding: 20px;
   border: 2px solid #005D30;
