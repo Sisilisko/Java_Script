@@ -1,0 +1,47 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  display: flex;
+  gap: 10px;
+  grid-column-gap: 15px;
+  flex-wrap: wrap;
+
+}
+h1, h2 {
+  text-align: center;
+}
+.tehtava-container {
+  max-width: 350px;
+  background-color: SeaGreen;
+  padding: 20px;
+  border: 2px solid #005D30;
+  border-radius: 5px;
+  color: white;
+}
+h2 {
+  margin: 0;
+
+}
+input {
+  margin-bottom: 10px;
+}
+button {
+  background-color: Gainsboro;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 16px;
+  border: 2px solid #005D30;
+  border-radius: 5px;
+}
+#student-container {
+  border: 2px solid #005D30;
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
+  gap: 10px;
+  float: right;
+  clear: both;
+  margin: 10px;
+}

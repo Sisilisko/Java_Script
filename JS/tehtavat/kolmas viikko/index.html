@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Viikon 3 ensimmäiset harjoitukset</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Viikon 3 ensimmäiset harjoitukset</h1>
+    <div class="container">
+      <section class="tehtava-container">
+        <h2>Tehtävä 1</h2>
+        <p>Tee ohjelma, joka pyytää käyttäjältä parillista lukua ja tulostaa tämän jälkeen kaikki parilliset luvut siihen asti poislukien 0:n</p>
+        <form class="" action="index.html" method="post">
+          <label for="luku1">Anna parillinen luku: </label>
+          <input type="number" name="" value="" id="luku1">
+          <button type="button" name="button" onclick="parilliset()">Tulosta parilliset</button>
+        </form>
+        <p id="t1"></p>
+      </section>
+
+      <section class="tehtava-container">
+        <h2>Tehtävä 2</h2>
+        <p>Kirjoita ohjelma, joka muuntaa käyttäjän antaman sanan salasanaksi siten, että laittaa joka toiseksi kirjaimeksi ison Ö-kirjaimen, eli jos sana on Kaappi --> KÖaÖaÖpÖpÖiÖ</p>
+        <form class="" action="index.html" method="post">
+          <label for="salasana">Anna sana: </label>
+          <input type="text" name="" value="" id="salasana"><br>
+          <button type="button" name="button" onclick="muuttaaSalasana()">Muuta salasanaksi</button>
+        </form>
+        <p id="t2"></p>
+      </section>
+
+      <section class="tehtava-container">
+        <h2>Tehtävä 3</h2>
+        <p>Kirjoita ohjelma, joka tarkastaa, onko antamassasi sanassa ö-kirjainta ja kirjoittaa vastaukseksi joko: on tai ei ole</p>
+        <form class="" action="index.html" method="post">
+          <label for="sana">Anna sana: </label>
+          <input type="text" name="" value="" id="sana">
+          <button type="button" name="button" onclick="tarkistaÖ()">Onko ö-kirjainta</button>
+        </form>
+        <p id="t3"></p>
+      </section>
+
+      <section class="tehtava-container">
+        <h2>Tehtävä 4</h2>
+        <p>Kirjoita ohjelma, joka laskee annetun luvun kertoman<br>(esim: 4 -> 4*3*2*1 = 24)</p>
+        <form class="" action="index.html" method="post">
+          <label for="t4-luku">Anna luku, josta lasketaan kertoma: </label>
+          <input type="number" name="" value="" id="t4-luku">
+          <button type="button" name="button" onclick="laskeKertoma()">Laske kertoma</button>
+        </form>
+        <p id="t4"></p>
+      </section>
+
+      <section class="tehtava-container">
+        <h2>Tehtävä 5</h2>
+        <p>Kirjoita ohjelma, joka tulostaa näytölle luvut 1-100, kuitenkin siten, että jos luku on 3:lla jaollinen, tulostetaan hip ja viidellä jaollinen tulostetaan heijaa ja jos sekä viidellä että kolmella jaollinen, tulostetaan hipheijaa</p>
+        <form class="" action="index.html" method="post">
+          <button type="button" name="button" onclick="tulosta100()">Tulosta</button>
+        </form>
+        <p id="t5"></p>
+      </section>
+
+      <section class="tehtava-container">
+        <h2>Tehtävä 6</h2>
+        <p>Kirjoita ohjelma, joka tulostaa 10 ensimmäistä numeroa</p>
+        <form class="" action="index.html" method="post">
+          <button type="button" name="button" onclick="print10()">10 Ensimmäistä</button>
+        </form>
+        <p id="t6"></p>
+      </section>
+
+      <section class="tehtava-container">
+        <h2>Tehtävä 7</h2>
+        <p>Kirjoita ohjelma, joka laskee 10 ensimmäistä numeroa yhteen</p>
+        <form class="" action="index.html" method="post">
+          <button type="button" name="button" onclick="summaEns10()">Laske 10 ens. yhteen</button>
+        </form>
+        <p id="t7"></p>
+      </section>
+
+      <section class="tehtava-container">
+        <h2>Tehtävä 8</h2>
+        <p>Kirjoita ohjelma, joka kysyy käyttäjältä kahta lukua ja laskee ensimmäisen potenssiin toinen esim. 5 ja 2 = 5<sup>2</sup> = 25</p>
+        <form class="" action="index.html" method="post">
+          <label for="t8-luku1">Anna korotettava luku: </label>
+          <input type="number" name="" value="" id="t8-luku1">
+          <label for="t8-luku2">Anna potenssi: </label>
+          <input type="number" name="" value="" id="t8-luku2">
+          <button type="button" name="button" onclick="laskePotenssi()">Laske</button>
+        </form>
+        <p id="t8"></p>
+      </section>
+
+      <section class="tehtava-container">
+        <h2>Tehtävä 9</h2>
+        <p>Kirjoita ohjelma, joka etsii annetusta luvuista suurimman ja pienimmän arvon</p>
+        <form class="" action="index.html" method="post">
+          <label for="t8-luku1">Anna 1. luku: </label>
+          <input type="number" name="" value="" id="t9-luku1"><br>
+          <label for="t8-luku2">Anna 2. luku: </label>
+          <input type="number" name="" value="" id="t9-luku2"><br>
+          <label for="t8-luku3">Anna 3. luku: </label>
+          <input type="number" name="" value="" id="t9-luku3"><br>
+          <label for="t8-luku4">Anna 4. luku: </label>
+          <input type="number" name="" value="" id="t9-luku4"><br>
+          <label for="t8-luku5">Anna 5. luku: </label>
+          <input type="number" name="" value="" id="t9-luku5">
+          <button type="button" name="button" onclick="searchMaxAndMin()">Etsi suurin ja pienin</button>
+        </form>
+        <p id="t9"></p>
+      </section>
+
+    </div>
+
+    <section id="student-container">
+      <div id="student-data">
+      Opiskelija: Viktoriia Beloborodova<br>
+      06.10.2022<br>
+      <a href="https://pinja.keuda.fi/pluginfile.php/1124636/mod_resource/content/2/Ehtoo2lauseita%281%29.pdf">Tehtävä</a>
+      </div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" width="80">
+    </section>
+  </body>
+</html>
