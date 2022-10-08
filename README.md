@@ -26,6 +26,8 @@ This is my first repo at KEUDA (August, 2022)
 
 :black_nib: JS tehtävät (2 viikko) (26.09): https://viktoriia-code.github.io/Java_Script/JS/tehtavat/toinen%20viikko/
 
+:black_nib: JS tehtävät (3 viikko) (06.10): https://viktoriia-code.github.io/Java_Script/JS/tehtavat/kolmas%20viikko/
+
 ## Group tasks
 
 :heavy_check_mark: 1. projekti "Form validation": https://viktoriia-code.github.io/Java_Script/Ryhm%C3%A4ty%C3%B6t/Projekti1-lomake/index.html
