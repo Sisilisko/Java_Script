@@ -30,4 +30,4 @@ This is my first repo at KEUDA (August, 2022)
 
 ## Group tasks
 
-:heavy_check_mark: 1. projekti "Form validation": https://viktoriia-code.github.io/Java_Script/Ryhm%C3%A4ty%C3%B6t/Projekti1-lomake/index.html
+:people_holding_hands: 1. projekti "Form validation": https://viktoriia-code.github.io/Java_Script/Ryhm%C3%A4ty%C3%B6t/Projekti1-lomake/index.html
