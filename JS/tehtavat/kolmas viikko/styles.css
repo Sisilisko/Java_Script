@@ -28,8 +28,8 @@ input {
 }
 button {
   background-color: Gainsboro;
-  height: 30px;
-  padding: 0 10px;
+  height: auto;
+  padding: 5px 10px;
   font-size: 16px;
   border: 2px solid #005D30;
   border-radius: 5px;

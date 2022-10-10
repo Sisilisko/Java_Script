@@ -28,8 +28,11 @@ function dayName() {
     case '6':
       document.getElementById('t2').innerHTML = "Lauantai";
       break;
-    default:
+    case '7':
       document.getElementById('t2').innerHTML = "Sunnuntai";
+      break;
+    default:
+      document.getElementById('t2').innerHTML = "Et antanut luku 1-7";
   }
 }
 
