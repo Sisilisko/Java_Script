@@ -6,16 +6,23 @@ body {
   gap: 10px;
   grid-column-gap: 15px;
   flex-wrap: wrap;
-
+  justify-content: center;
 }
 h1, h2 {
   text-align: center;
 }
+h1 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: normal;
+  font-size: 3em;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
 .tehtava-container {
   max-width: 350px;
-  background-color: Purple;
+  background-color: #1C2B7B;
   padding: 20px;
-  border: 3px solid Plum;
+  border: 3px solid #AAB0DB;
   border-radius: 5px;
   color: white;
 }
@@ -32,7 +39,6 @@ button {
   height: auto;
   padding: 5px 10px;
   font-size: 16px;
-  border: 3px solid Plum;
   border-radius: 5px;
 }
 #student-container {
