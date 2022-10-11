@@ -24,9 +24,13 @@ This is my first repo at KEUDA (August, 2022)
 
 :black_nib: JS lomake (22.09): https://viktoriia-code.github.io/Java_Script/JS/lomake%2022.09/
 
-:black_nib: JS tehtävät (2 viikko) (26.09): https://viktoriia-code.github.io/Java_Script/JS/tehtavat/toinen%20viikko/
+:black_nib: JS tehtävät (2. viikko) (26.09): https://viktoriia-code.github.io/Java_Script/JS/tehtavat/toinen%20viikko/
 
-:black_nib: JS tehtävät (3 viikko) (06.10): https://viktoriia-code.github.io/Java_Script/JS/tehtavat/kolmas%20viikko/
+:black_nib: JS tehtävät (2. viikko toiset tehtävät): https://viktoriia-code.github.io/Java_Script/JS/tehtavat/toinen%20viikko%202.%20harjoitukset/
+
+:black_nib: JS tehtävät (3. viikko) (06.10): https://viktoriia-code.github.io/Java_Script/JS/tehtavat/kolmas%20viikko/
+
+:black_nib: JS tehtävät (3. viikko toiset tehtävät) (11.10): https://viktoriia-code.github.io/Java_Script/JS/tehtavat/kolmas%20viikko%202.%20harjoitukset/
 
 ## Group tasks :family_man_girl_girl: 
 
