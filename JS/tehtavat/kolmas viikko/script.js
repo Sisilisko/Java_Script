@@ -100,32 +100,24 @@ function randowSalasana() {
 }
 //tehtävä 11
 function pariSummat() {
-  var pnro = document.getElementById('t11-luku-p').value;
-  var inro = document.getElementById('t11-luku-i').value;
-  var palku, ralku, psumma=0, rsumma=0, pluvut=[], rluvut='';
+  var pnro = parseInt(document.getElementById('t11-luku-p').value);
+  var inro = parseInt(document.getElementById('t11-luku-i').value);
+  var palku, ralku, psumma=0, rsumma=0, pluvut='', rluvut='';
   if(pnro%2 == 0) {
     palku = pnro;
   } else {
     palku = pnro+1;
   };
-  console.log(palku);
-  console.log(inro);
-  for(var b=palku;b<=inro; b+=2) {
-    pluvut.push(b);
-    console.log(pluvut);
+  for (var b=palku;b<=inro; b+=2) {
+    pluvut += b + ' ';
     psumma += b;
-
-    //alert(pluvut + ' ' + psumma);
   };
-  if(pnro%2 == 0)
-  {
+  if(pnro%2 == 0) {
     ralku = pnro+1;
-  }
-  else {
+  } else {
     ralku = pnro;
   }
-  for(var r = ralku; r<=inro; r+=2)
-  {
+  for(var r = ralku; r<=inro; r+=2) {
     rluvut += r + ' ';
     rsumma += r;
   }

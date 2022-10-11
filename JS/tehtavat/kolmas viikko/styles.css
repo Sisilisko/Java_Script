@@ -13,9 +13,9 @@ h1, h2 {
 }
 .tehtava-container {
   max-width: 350px;
-  background-color: SeaGreen;
+  background-color: Purple;
   padding: 20px;
-  border: 2px solid #005D30;
+  border: 3px solid Plum;
   border-radius: 5px;
   color: white;
 }
@@ -25,13 +25,14 @@ h2 {
 }
 input {
   margin-bottom: 10px;
+  line-height: 130%;
 }
 button {
   background-color: Gainsboro;
   height: auto;
   padding: 5px 10px;
   font-size: 16px;
-  border: 2px solid #005D30;
+  border: 3px solid Plum;
   border-radius: 5px;
 }
 #student-container {
