@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #D9BFAF;
 }
 .container {
   display: flex;
@@ -20,9 +21,9 @@ h1 {
 }
 .tehtava-container {
   max-width: 350px;
-  background-color: #102C7A;
+  background-color: #B61F1A;
   padding: 20px;
-  border: 3px solid #AAB0DB;
+  border: 3px solid #6D0E0C;
   border-radius: 5px;
   color: white;
 }
@@ -41,14 +42,11 @@ button {
   font-size: 16px;
   border-radius: 5px;
 }
-#student-container {
-  border: 2px solid #005D30;
-  display: flex;
-  padding: 10px;
-  border-radius: 5px;
-  width: fit-content;
-  gap: 10px;
-  float: right;
-  clear: both;
-  margin: 10px;
+table {
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px;
+}
+td {
+  width: 30px;
 }
