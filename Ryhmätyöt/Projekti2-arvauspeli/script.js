@@ -31,7 +31,7 @@ function arvaa(arpa) {
     document.getElementById('loseNumber').innerHTML = loseNumero;
   }
 }
-
+//play again
 function pelaaTaas() {
   for (i=0;i<luvut.length;i++) {
     luvut[i].classList.remove("vaarin");
