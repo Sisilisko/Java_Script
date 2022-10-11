@@ -86,7 +86,9 @@ h1 {
   display: flex;
   justify-content: space-between;
   text-align: center;
-
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
 }
 .wins {
   color: #8BAD4C;
