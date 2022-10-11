@@ -35,3 +35,5 @@ This is my first repo at KEUDA (August, 2022)
 ## Group tasks :family_man_girl_girl: 
 
 :atom: 1. projekti "Form validation": https://viktoriia-code.github.io/Java_Script/Ryhm%C3%A4ty%C3%B6t/Projekti1-lomake/index.html
+
+:atom: 2. projekti "Arvauspeli": https://viktoriia-code.github.io/Java_Script/Ryhm%C3%A4ty%C3%B6t/Projekti2-arvauspeli/
