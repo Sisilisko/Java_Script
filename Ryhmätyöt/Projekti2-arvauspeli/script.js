@@ -8,7 +8,7 @@ var loseNumero = 0;
 function arvaa(arpa) {
   kerrat++;
   var arvaus = arpa.value;
-  if ((kerrat <= 3)&&(win==0)) {
+  if ((kerrat < 3)&&(win==0)) {
     if (arvaus < arvoLuku) {
       document.getElementById('viesti').innerHTML = 'Valitsit liian pienen numeron';
       document.getElementById(''+arvaus+'').classList.toggle("vaarin");
@@ -22,13 +22,27 @@ function arvaa(arpa) {
       winNumero += 1;
       document.getElementById('winNumber').innerHTML = winNumero;
     }
+  } else if ((kerrat==3)&&(win==0)) {
+    if (arvaus < arvoLuku) {
+      document.getElementById('viesti').innerHTML = 'Valitsit liian pienen numeron ja käytit kaikki arvauksesi, oikea luku on ' + arvoLuku + '<br><button class="taas" onclick="pelaaTaas()">Pelaa taas</button>';
+      document.getElementById(''+arvaus+'').classList.toggle("vaarin");
+      loseNumero += 1;
+      document.getElementById('loseNumber').innerHTML = loseNumero;
+    } else if(arvaus > arvoLuku) {
+      document.getElementById('viesti').innerHTML = 'Valitsit liian suuren numeron ja käytit kaikki arvauksesi, oikea luku on ' + arvoLuku + '<br><button class="taas" onclick="pelaaTaas()">Pelaa taas</button>';
+      document.getElementById(''+arvaus+'').classList.toggle("vaarin");
+      loseNumero += 1;
+      document.getElementById('loseNumber').innerHTML = loseNumero;
+    } else if (arvaus == arvoLuku) {
+      document.getElementById('viesti').innerHTML ='Oikein, käytit ' + kerrat + ' kertaa<br><button class="taas" onclick="pelaaTaas()">Pelaa taas</button>';
+      document.getElementById(''+arvoLuku+'').classList.toggle("oikein");
+      win = 1;
+      winNumero += 1;
+      document.getElementById('winNumber').innerHTML = winNumero;
+    }
   } else if (win==1){
-      document.getElementById('viesti').innerHTML ='Löysit jo oikean luvun<br><button class="taas" onclick="pelaaTaas()">Pelaa taas</button>';
+      document.getElementById('viesti').innerHTML ='Löysit jo oikean luvun, se on ' +arvoLuku + '<br><button class="taas" onclick="pelaaTaas()">Pelaa taas</button>';
       document.getElementById(''+arvoLuku+'').classList.add("oikein");
-  } else {
-    document.getElementById('viesti').innerHTML = 'Käytit kaikki arvauksesi, oikea luku on ' + arvoLuku + '<br><button class="taas" onclick="pelaaTaas()">Pelaa taas</button>';
-    loseNumero += 1;
-    document.getElementById('loseNumber').innerHTML = loseNumero;
   }
 }
 //play again
