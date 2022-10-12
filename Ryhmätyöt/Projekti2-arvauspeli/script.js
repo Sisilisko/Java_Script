@@ -50,7 +50,6 @@ function pelaaTaas() {
   for (i=0;i<luvut.length;i++) {
     luvut[i].classList.remove("vaarin");
     luvut[i].classList.remove("oikein");
-    console.log(win);
   }
   kerrat = 0;
   win = 0;
