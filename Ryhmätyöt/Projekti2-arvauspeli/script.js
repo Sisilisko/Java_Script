@@ -24,13 +24,13 @@ function arvaa(arpa) {
     }
   } else if ((kerrat==3)&&(win==0)) {
     if (arvaus < arvoLuku) {
-      document.getElementById('viesti').innerHTML = 'Valitsit liian pienen numeron ja käytit kaikki arvauksesi, oikea luku on ' + arvoLuku + '<br><button class="taas" onclick="pelaaTaas()">Pelaa taas</button>';
+      document.getElementById('viesti').innerHTML = 'Valitsit liian pienen numeron ja käytit kaikki arvauksesi,<br> oikea luku on ' + arvoLuku + '<br><button class="taas" onclick="pelaaTaas()">Pelaa taas</button>';
       document.getElementById(''+arvaus+'').classList.toggle("vaarin");
       loseNumero += 1;
       document.getElementById('loseNumber').innerHTML = loseNumero;
       document.getElementById(''+arvoLuku+'').classList.add("levitate");
     } else if(arvaus > arvoLuku) {
-      document.getElementById('viesti').innerHTML = 'Valitsit liian suuren numeron ja käytit kaikki arvauksesi, oikea luku on ' + arvoLuku + '<br><button class="taas" onclick="pelaaTaas()">Pelaa taas</button>';
+      document.getElementById('viesti').innerHTML = 'Valitsit liian suuren numeron ja käytit kaikki arvauksesi,<br> oikea luku on ' + arvoLuku + '<br><button class="taas" onclick="pelaaTaas()">Pelaa taas</button>';
       document.getElementById(''+arvaus+'').classList.toggle("vaarin");
       loseNumero += 1;
       document.getElementById('loseNumber').innerHTML = loseNumero;
