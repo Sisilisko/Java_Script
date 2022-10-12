@@ -37,3 +37,5 @@ This is my first repo at KEUDA (August, 2022)
 :atom: 1. projekti "Form validation": https://viktoriia-code.github.io/Java_Script/Ryhm%C3%A4ty%C3%B6t/Projekti1-lomake/index.html
 
 :atom: 2. projekti "Arvauspeli": https://viktoriia-code.github.io/Java_Script/Ryhm%C3%A4ty%C3%B6t/Projekti2-arvauspeli/
+
+:atom: 2B. projekti "Lomake": https://viktoriia-code.github.io/Java_Script/Ryhm%C3%A4ty%C3%B6t/Projekti2B-lomake/
