@@ -28,11 +28,13 @@ function arvaa(arpa) {
       document.getElementById(''+arvaus+'').classList.toggle("vaarin");
       loseNumero += 1;
       document.getElementById('loseNumber').innerHTML = loseNumero;
+      document.getElementById(''+arvoLuku+'').classList.add("levitate");
     } else if(arvaus > arvoLuku) {
       document.getElementById('viesti').innerHTML = 'Valitsit liian suuren numeron ja käytit kaikki arvauksesi, oikea luku on ' + arvoLuku + '<br><button class="taas" onclick="pelaaTaas()">Pelaa taas</button>';
       document.getElementById(''+arvaus+'').classList.toggle("vaarin");
       loseNumero += 1;
       document.getElementById('loseNumber').innerHTML = loseNumero;
+      document.getElementById(''+arvoLuku+'').classList.add("levitate");
     } else if (arvaus == arvoLuku) {
       document.getElementById('viesti').innerHTML ='Oikein, käytit ' + kerrat + ' kertaa<br><button class="taas" onclick="pelaaTaas()">Pelaa taas</button>';
       document.getElementById(''+arvoLuku+'').classList.toggle("oikein");
@@ -50,9 +52,12 @@ function pelaaTaas() {
   for (i=0;i<luvut.length;i++) {
     luvut[i].classList.remove("vaarin");
     luvut[i].classList.remove("oikein");
+    luvut[i].classList.remove("levitate");
   }
   kerrat = 0;
   win = 0;
   arvoLuku = Math.ceil(Math.random()*10);
   document.getElementById('viesti').innerHTML = '';
 }
+
+animation()
