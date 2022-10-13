@@ -39,5 +39,3 @@ This is my first repo at KEUDA (August, 2022)
 :atom: 2. projekti "Arvauspeli": https://viktoriia-code.github.io/Java_Script/Ryhm%C3%A4ty%C3%B6t/Projekti2-arvauspeli/
 
 :atom: 2B. projekti "Lomake": https://viktoriia-code.github.io/Java_Script/Ryhm%C3%A4ty%C3%B6t/Projekti2B-lomake/
-
-![alt text](https://github.com/Viktoriia-code/Java_Script/blob/main/4.%20projekti/running.jpg?raw=true)
