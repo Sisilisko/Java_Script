@@ -1,0 +1,22 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-family: 'Staatliches', cursive;
+  text-align: center;
+  color: white;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: red;
+}
+input {
+  margin-bottom: 8px;
+}
+.fone {
+  background-image: url(running.jpg);
+  height: 111px;
+    background-size: cover;
+    background-position-y: -138px;
+}
