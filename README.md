@@ -18,7 +18,7 @@ This is my first repo at KEUDA (August, 2022)
 
 :heavy_check_mark: 2. projekti ("Hello World!"): https://viktoriia-code.github.io/Java_Script/2.%20projekti/
 
-:heavy_check_mark: 3. projekti (in process!): https://viktoriia-code.github.io/Java_Script/3.%20projekti/
+:heavy_check_mark: 3. projekti (Photography): https://viktoriia-code.github.io/Java_Script/3.%20projekti/
 
 :heavy_check_mark: 4. projekti (Lomake): https://viktoriia-code.github.io/Java_Script/4.%20projekti/
 
