@@ -1,22 +1,82 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 h1 {
   font-family: 'Staatliches', cursive;
-  text-align: center;
-  color: white;
 }
 .container {
   max-width: 600px;
   margin: 0 auto;
-  background: red;
+  background: #DCDCDC;
+  margin-bottom: 60px;
 }
 input {
   margin-bottom: 8px;
 }
 .fone {
   background-image: url(running.jpg);
-  height: 111px;
-    background-size: cover;
-    background-position-y: -138px;
+  background-size: cover;
+  background-position-y: -138px;
+}
+.fone-wrapper {
+  background-color: rgba(128,128,128, 0.4);
+  color: white;
+  font-family: 'Staatliches', cursive;
+  padding: 25px 15px;
+}
+.ilmoitu {
+  padding: 15px 15px 5px 15px;
+}
+.ilmoitu h1 {
+  text-align: center;
+}
+input {
+  height: 20px;
+}
+input[type="submit"], input[type="reset"] {
+  font-family: 'Staatliches', cursive;
+  height: 34px;
+  width: 100px;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+input[type="submit"] {
+  background-color: darkseagreen;
+  border: 2px solid darkolivegreen;
+}
+input[type="reset"] {
+  background-color: indianred;
+  border: 2px solid darkred;
+}
+hr {
+  margin: 5px;
+}
+.button-container {
+  width: 100%;
+  background-color: rgba(128,128,128, 0.4);
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  text-align: right;
+}
+fieldset {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 13px;
+  background: #DCDCDC;
+}
+legend {
+  font-weight: bolder;
+}
+textarea {
+  width: 100%;
 }

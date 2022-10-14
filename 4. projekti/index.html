@@ -8,48 +8,108 @@
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="button-container">
+      <input type="reset" name="" value="Reset">
+      <input type="submit" name="" value="Submit">
+
+    </div>
     <div class="container">
       <div class="fone">
-        <h1>Ilmoittaudu tapahtumaan</h1>
+        <div class="fone-wrapper">
+          <h1>Kerava Marathon juostaan 12.8.2023</h1>
+          <p>Kerava Marathon on kaikille avoin juoksutapahtuma Keravan keskustan kaduilla, ja se juostaan jälleen elokuussa 2023!</p>
+
+        </div>
 
       </div>
+      <div class="ilmoitu">
+
+      <h1>Ilmoittaudu tapahtumaan</h1>
       <form class="" action="index.html" method="post">
-        <label for="snimi">Sukunimi</label>
-        <input type="text" name="" value="" id="snimi"><br>
-        <label for="enimi">Etunimi</label>
-        <input type="text" name="" value="" id="enimi">
-        <div class="osoitetitedot">
-          <h4>Osoitetitedot</h4>
-          <label for="city">Kaupunki</label>
-          <input type="text" name="" value="" id="city"><br>
-          <label for="street">Katu</label>
-          <input type="text" name="" value="" id="street">
-          <label for="house">Rakennus</label>
-          <input type="text" name="" value="" id="house">
-        </div>
-        <label for="phone">Puhelin</label>
-        <input type="number" name="" value=""><br>
-        <label for="email">Sähköposti</label>
-        <input type="email" name="" value=""><br>
-        <label for="occupation">Työnantaja tai jos opiskelija oppilaitos</label>
-        <input type="text" name="" value="" id="occupation"><br>
-        <label for="workplace">Ammattinimike tai jos opiskelija: opiskelija</label>
-        <input type="text" name="" value="" id="workplace"><br>
-        <label for="birthday">Syntymäaika</label>
-        <input type="date" name="" value="" id="birthday"><br>
-        <label for="price">Tapahtuman hintavaihtoehdot</label>
-        <select class="" name="" id="price">
-          <option value="10">10€</option>
-          <option value="10">30€</option>
-          <option value="10">100€</option>
-        </select><br>
-        <p>Erikoisruokavalio:</p>
-        <input type="radio" name="food" value="" id="diet1"><label for="diet1">Juomat + suklat</label><br>
-        <input type="radio" name="food" value="" id="diet2"><label for="diet2">Juomat + suklat + lounas</label><br>
-        <input type="radio" name="food" value="" id="diet3"><label for="diet3">Juomat + suklat + vegaanilounas</label><br>
-        <label for="lisaa">Lisätietoja</label><br>
-        <textarea name="name" rows="8" cols="80" id="lisaa"></textarea>
+        <fieldset>
+          <legend>Henkilötiedot</legend>
+          <table>
+            <tr>
+              <td><label for="snimi">Sukunimi</label></td>
+              <td><input type="text" name="" value="" id="snimi"></td>
+            </tr>
+            <tr>
+              <td><label for="enimi">Etunimi</label></td>
+              <td><input type="text" name="" value="" id="enimi"></td>
+            </tr>
+            <tr>
+              <td><label for="occupation">Työnantaja tai jos opiskelija oppilaitos</label></td>
+              <td><input type="text" name="" value="" id="occupation"></td>
+            </tr>
+            <tr>
+              <td><label for="workplace">Ammattinimike tai jos opiskelija: opiskelija</label></td>
+              <td><input type="text" name="" value="" id="workplace"></td>
+            </tr>
+            <tr>
+              <td><label for="birthday">Syntymäaika</label></td>
+              <td><input type="date" name="" value="" id="birthday"></td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Osoitetitedot</legend>
+          <table>
+            <tr>
+              <td><label for="city">Kaupunki</label></td>
+              <td><input type="text" name="" value="" id="city"></td>
+              <td><label for="postalCode">Postinumero</label></td>
+              <td><input type="number" name="" value="" id="postalCode"></td>
+            </tr>
+            <tr>
+              <td><label for="street">Katu</label></td>
+              <td><input type="text" name="" value="" id="street"></td>
+              <td><label for="house">Rakennus</label></td>
+              <td><input type="text" name="" value="" id="house"></td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Contacts</legend>
+          <table>
+            <tr>
+              <td><label for="phone">Puhelin</label></td>
+              <td><input type="number" name="" value=""></td>
+            </tr>
+            <tr>
+              <td><label for="email">Sähköposti</label></td>
+              <td><input type="email" name="" value=""></td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Options</legend>
+          <table>
+            <tr>
+              <td><label for="price">Tapahtuman hintavaihtoehdot</label></td>
+              <td>
+                <select class="" name="" id="price">
+                  <option value="10">10€</option>
+                  <option value="10">30€</option>
+                  <option value="10">100€</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="diet">Erikoisruokavalio:</label></td>
+              <td>
+                <input type="radio" name="food" value="" id="diet1"><label for="diet1">Juomat + suklat</label><br>
+                <input type="radio" name="food" value="" id="diet2"><label for="diet2">Juomat + suklat + lounas</label><br>
+                <input type="radio" name="food" value="" id="diet3"><label for="diet3">Juomat + suklat + vegaanilounas</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="lisaa">Lisätietoja</label></td>
+              <td><textarea name="name" rows="5" id="lisaa"></textarea></td>
+            </tr>
+          </table>
+        </fieldset>
       </form>
+    </div>
 
     </div>
   </body>
