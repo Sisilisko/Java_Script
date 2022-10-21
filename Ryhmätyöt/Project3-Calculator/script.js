@@ -35,5 +35,5 @@ function removeLast() {
 function save() {
   const time = new Date();
   const timeStr = time.toLocaleTimeString();
-  document.getElementById('savedNotes').insertAdjacentHTML("beforeend", `${timeStr}: ${new String(startNumber)} = ${eval(startNumber)}<br>`);
+  document.getElementById('savedNotes').insertAdjacentHTML("beforeend", `${timeStr}: ${startNumber} = ${eval(startNumber)}<br>`);
 }

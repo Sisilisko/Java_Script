@@ -62,13 +62,19 @@ p {
 }
 #result {
   font-size: 90px;
-  line-height: 100px;
-  height: 70px;
+  line-height: 90px;
+  height: 120px;
+  overflow: auto;
+    vertical-align: bottom;
+    align-self: end;
+    max-width: 432px;
 
 }
 #operation {
   font-size: 35px;
   color: DarkGray;
+  max-width: 432px;
+  overflow: auto;
 }
 #equal {
   border-radius: 35px;
