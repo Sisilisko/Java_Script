@@ -17,8 +17,7 @@ function laske() {
     document.getElementById('result').innerHTML = startNumber;
   } else{
     document.getElementById('result').innerHTML = eval(startNumber);
-
-
+    document.getElementById('operation').innerHTML = startNumber;
   }
 }
 
@@ -29,14 +28,6 @@ function reset() {
 }
 
 function removeLast() {
-  /*for(var i = 0; i < startNumber.length; i++) {
-    for(var j = 0; j < taulu.length; j++) {
-      if(startNumber[i] == taulu[j]) {
-        index = i;
-      }
-    }
-  }
-  startNumber = startNumber.substr(0, index);*/
   startNumber = startNumber.substr(0, startNumber.length - 1);
   document.getElementById('operation').innerHTML = startNumber;
 }
