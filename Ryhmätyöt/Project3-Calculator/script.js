@@ -5,6 +5,7 @@ var index = 0;
 
 function add(number) {
   startNumber+= number;
+  return number;
   document.getElementById('operation').innerHTML = startNumber;
 }
 
@@ -37,3 +38,4 @@ function save() {
   const timeStr = time.toLocaleTimeString();
   document.getElementById('savedNotes').insertAdjacentHTML("beforeend", `${timeStr}: ${startNumber} = ${eval(startNumber)}<br>`);
 }
+module.exports = { add, laske };
