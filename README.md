@@ -46,6 +46,6 @@ This is my first repo at KEUDA (August, 2022)
 
 :atom: 3. projekti "Laskin": https://viktoriia-code.github.io/Java_Script/Ryhm%C3%A4ty%C3%B6t/Project3-Calculator/
 
-:scroll: Dokumentointi 3. projekti "Lomake": https://github.com/Viktoriia-code/Java_Script/blob/main/Ryhm%C3%A4ty%C3%B6t/Project3-Calculator/Dokumentointi%20Laskin%20(3.%20project).pdf
+:scroll: Dokumentointi 3. projekti "Laskin": https://github.com/Viktoriia-code/Java_Script/blob/main/Ryhm%C3%A4ty%C3%B6t/Project3-Calculator/Dokumentointi%20Laskin%20(3.%20project).pdf
 
 :atom: 4. projekti "TODO list":
