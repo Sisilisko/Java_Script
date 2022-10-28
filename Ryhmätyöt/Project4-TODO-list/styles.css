@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #F8F8F8;
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+#matrix {
+  width: 100%;
+}
+.more_info {
+  display: block;
+  text-align: right;
+  font-family: 'Optima';
+}
