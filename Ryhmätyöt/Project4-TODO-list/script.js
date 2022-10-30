@@ -96,6 +96,9 @@ var taskIncomplete=function() {
     bindTaskEvents(listItem,taskCompleted);
 }
 
+//Set the click handler to the addTask function.
+addButton.addEventListener("click",addTask);
+
 //The glue to hold it all together.
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("loop function");
