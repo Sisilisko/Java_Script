@@ -19,18 +19,17 @@
           <label for="new-task">Add Item</label>
           <div class="task-wrapper">
             <input id="new-task" class="task" type="text">
-            <button id="add-task">Add</button>
-            <ul>
-
-            </ul>
+            <button id="add-task" onclick="addTask()">Add</button>
+            <ul></ul>
           </div>
         </section>
         <section class="todo-list">
-          <label for="new-task">Todo</label>
+          <h3>Todo</h3>
           <ul id="incomplete-tasks"></ul>
         </section>
         <section class="done-list">
-
+          <h3>Done</h3>
+          <ul id="completed-tasks"></ul>
         </section>
       </main>
     </div>
