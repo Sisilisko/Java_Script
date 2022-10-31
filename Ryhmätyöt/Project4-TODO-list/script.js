@@ -2,7 +2,7 @@
 var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementById("add-task");//Button to ass a new task.
 var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #incomplete-tasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var completedTasksHolder=document.getElementById("completed-tasks");//ul of completed-tasks
 
 //Creating task item
 var createNewTaskElement=function(taskString){
@@ -45,6 +45,16 @@ var addTask = function() {
     taskInput.value="";
 }
 
+//Set the enter handler to the addTask function.
+taskInput.addEventListener("keypress", addTaskWithEnter);
+
+function addTaskWithEnter() {
+  if (event.keyCode === 13 && taskInput.value) {
+    console.log("Enter key detected.");
+    addTask();
+  }
+};
+
 //Edit an existing task.
 var editTask=function(){
     console.log("Edit Task...");
@@ -62,6 +72,13 @@ var editTask=function(){
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";
+        editInput.addEventListener("keypress", function(event) {
+          if (event.keyCode === 13) {
+            listItem.classList.remove("edit-mode");
+            editBtn.innerText="Edit";
+            label.innerText=editInput.value;
+          }
+        });
     }
     //toggle .edit-mode on the parent.
     listItem.classList.toggle("edit-mode");
@@ -70,10 +87,14 @@ var editTask=function(){
 //Delete task.
 var deleteTask=function(){
     console.log("Delete Task...");
+    if (confirm("Do you want to delete this task?")) {
     var listItem=this.parentNode;
     var ul=listItem.parentNode;
     //Remove the parent list item from the ul.
     ul.removeChild(listItem);
+  } else {
+    return;
+  }
 }
 
 //Mark task completed
