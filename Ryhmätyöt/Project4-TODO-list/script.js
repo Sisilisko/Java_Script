@@ -63,23 +63,34 @@ var editTask=function(){
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit");
     var containsClass=listItem.classList.contains("edit-mode");
-    //If class of the parent is .edit-mode
-    if(containsClass){
-    //switch to .edit-mode
-    //label becomes the inputs value.
+
+editInput.addEventListener("keypress", editTaskWithEnter);
+function editTaskWithEnter() {
+  if (event.keyCode === 13/*&& editInput.value*/) {
+    console.log("Enter key in input detected.");
     label.innerText=editInput.value;
     editBtn.innerText="Edit";
+    listItem.classList.remove("edit-mode");
+  }
+};
+    //If class of the parent is .edit-mode
+    if(containsClass && !editInput.value){
+      if (confirm("Your task is empty. Do you want to delete this task?") == true) {
+      var listItem=this.parentNode;
+      var ul=listItem.parentNode;
+      //Remove the parent list item from the ul.
+      ul.removeChild(listItem);
+      }else{
+      editBtn.innerText="Edit";}
+    }else if(containsClass){
+      //switch to .edit-mode
+      //label becomes the inputs value.
+      label.innerText=editInput.value;
+      editBtn.innerText="Edit";
     }else{
-        editInput.value=label.innerText;
-        editBtn.innerText="Save";
-        editInput.addEventListener("keypress", function(event) {
-          if (event.keyCode === 13) {
-            listItem.classList.remove("edit-mode");
-            editBtn.innerText="Edit";
-            label.innerText=editInput.value;
-          }
-        });
-    }
+      editInput.value=label.innerText;
+      editBtn.innerText="Save";
+    };
     //toggle .edit-mode on the parent.
     listItem.classList.toggle("edit-mode");
 };
@@ -87,7 +98,7 @@ var editTask=function(){
 //Delete task.
 var deleteTask=function(){
     console.log("Delete Task...");
-    if (confirm("Do you want to delete this task?")) {
+    if (confirm("Do you want to delete this task?") == true) {
     var listItem=this.parentNode;
     var ul=listItem.parentNode;
     //Remove the parent list item from the ul.

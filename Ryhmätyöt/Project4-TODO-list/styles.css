@@ -158,3 +158,6 @@ ul li input[type=text] {
 .edit-mode label {
   display: none;
 }
+.edit {
+  background-image: url(./images/settings.png);
+}
