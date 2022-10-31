@@ -66,13 +66,27 @@ var editTask=function(){
 
 editInput.addEventListener("keypress", editTaskWithEnter);
 function editTaskWithEnter() {
-  if (event.keyCode === 13/*&& editInput.value*/) {
+  if (event.keyCode === 13 && editInput.value) {
     console.log("Enter key in input detected.");
     label.innerText=editInput.value;
     editBtn.innerText="Edit";
+    var listItem=this.parentNode;
     listItem.classList.remove("edit-mode");
+  } else if (event.keyCode === 13 && !editInput.value) {
+    if (confirm("Your task is empty. Do you want to delete this task?") == true) {
+    var listItem=this.parentNode;
+    var ul=listItem.parentNode;
+    //Remove the parent list item from the ul.
+    ul.removeChild(listItem);
+  }else{
+    editInput.value=label.innerText;
+    editBtn.innerText="Edit";
+    var listItem=this.parentNode;
+    listItem.classList.toggle("edit-mode");
+
   }
 };
+}
     //If class of the parent is .edit-mode
     if(containsClass && !editInput.value){
       if (confirm("Your task is empty. Do you want to delete this task?") == true) {
