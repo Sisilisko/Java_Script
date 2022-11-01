@@ -1,0 +1,19 @@
+/* Start reset settings */
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* End reset settings */
+
+body {
+  font-family: 'Anton', sans-serif;
+}
+h2 {
+  font-size: 7vh;
+  letter-spacing: 2px;
+}

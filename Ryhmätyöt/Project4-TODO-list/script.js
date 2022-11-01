@@ -36,16 +36,6 @@ var createNewTaskElement=function(taskString){
 //Set the click handler to the addTask function.
 addButton.addEventListener("click",addTask);
 
-var addTask = function() {
-  console.log("Add Task...");
-  if (!taskInput.value) return;//prevent creating an empty task
-  var listItem=createNewTaskElement(taskInput.value);
-  //Append listItem to incompleteTaskHolder
-  incompleteTaskHolder.appendChild(listItem);
-  bindTaskEvents(listItem, taskCompleted);
-  taskInput.value="";
-}
-
 //Set the enter handler to the addTask function.
 taskInput.addEventListener("keypress", addTaskWithEnter);
 
@@ -55,6 +45,16 @@ function addTaskWithEnter() {
     addTask();
   }
 };
+
+var addTask = function() {
+  console.log("Add Task...");
+  if (!taskInput.value) return;//prevent creating an empty task
+  var listItem=createNewTaskElement(taskInput.value);
+  //Append listItem to incompleteTaskHolder
+  incompleteTaskHolder.appendChild(listItem);
+  bindTaskEvents(listItem, taskCompleted);
+  taskInput.value="";
+}
 
 //***Editing task***
 var editTask=function(){
