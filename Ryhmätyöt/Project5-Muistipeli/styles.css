@@ -11,9 +11,35 @@
 /* End reset settings */
 
 body {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
 }
 h2 {
-  font-size: 7vh;
+  font-size: 60px;
   letter-spacing: 2px;
+  font-family: 'Anton', sans-serif;
+}
+.intro {
+  width: 30vw;
+  border: 3px solid black;
+  padding: 30px 30px 50px 30px;
+  border-radius: 40px;
+  box-shadow: 10px 10px black;
+  position: relative;
+}
+h1 {
+  margin-bottom: 30px;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 140%;
+}
+#cursor-img {
+  position: absolute;
+  bottom: -25px;
+  left: 30%;
+}
+#lightning-img {
+  top: 10vh;
+  position: relative;
 }
