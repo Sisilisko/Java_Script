@@ -118,3 +118,6 @@ p {
 .link-to-game {
   float: right;
 }
+.types {
+  display: inline-block;
+}
