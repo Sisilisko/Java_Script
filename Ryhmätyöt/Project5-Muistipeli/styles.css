@@ -119,5 +119,107 @@ p {
   float: right;
 }
 .types {
-  display: inline-block;
+  font-size: 28px;
+  line-height: 40px;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: black;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: black;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.settings-block {
+  display: flex;
+  gap: 20px;
+}
+button {
+  padding: 3px 25px;
+  font-size: 35px;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 40px;
+  box-shadow: 5px 5px black;
+  margin: 20px 0 0 35px;
+  cursor: pointer;
+  transition: transform 0.15s;
+transform-style: preserve-3d;
+position: relative;
+display: inline-block;
+cursor: pointer;
+outline: none;
+vertical-align: middle;
+
+
+}
+button:hover {
+  background-color: #FF4DA1;
+}
+.links {
+  border: 3px solid black;
+  border-radius: 40px;
+  box-shadow: 5px 5px black;
+  width: fit-content;
+  padding: 3px 25px;
+}
+a:hover {
+  background-color: #FF4DA1;
+}
+.link-github {
+  display: block;
+  padding-left: 2vw;
+  width: fit-content;
+}
+
+button:hover {
+  background: #FF4DA1;
+}
+
+button:active {
+  transform: translate3d(0, 0.3em, -0.3em);;
 }

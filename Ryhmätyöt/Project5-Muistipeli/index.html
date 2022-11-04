@@ -34,15 +34,33 @@
         </a></span>
         <div class="settings">
             <h3>SETTINGS</h3>
-              <tr>
-                <p>Choose game's type:</p>
-                <table class="types">
-              <tr><td>4x4</td></tr>
-              <tr><td>4x6</td></tr>
-              <tr><td>6x6</td></tr>
-            </table>
+            <div class="settings-block">
+              Choose game's type:
+
+              <div class="types">
+                <form>
+                  <input type="radio" name="type" value="4x4" id="type-4x4" checked>
+                  <label for="type-4x4">4 x 4</label><br>
+                  <input type="radio" name="type" value="4x6" id="type-4x6">
+                  <label for="type-4x6">4 x 6</label><br>
+                  <input type="radio" name="type" value="6x6" id="type-6x6">
+                  <label for="type-6x6">6 x 6</label>
+                </form>
+                <button type="button" name="button">Start</button>
+              </div>
+
+            </div>
+                  </td>
+                </tr>
+              </table>
+
         </div>
       </div>
     </div>
+      <span class="link-github"><a href="#">
+        <img src="./images/github.png" alt="" width="50">Github
+      </a>
+    </span>
+
   </body>
 </html>
