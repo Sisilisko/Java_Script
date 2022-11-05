@@ -16,7 +16,8 @@ body {
 }
 .container {
   display: flex;
-  grid-gap: 3vw;
+  align-items: center;
+  justify-content: space-around;
 }
 h2 {
   font-size: 60px;
@@ -54,7 +55,7 @@ p {
   bottom: 15px;
   right: 10%;
 }
-#lightning-img {
+#lamp {
   margin-top: 5vh;
   margin-bottom: 5vh;
   transform: rotate(13deg);
@@ -96,6 +97,11 @@ p {
 }
 .link-game {
   display: block;
+  padding-right: 2vw;
+  padding-top: 5vh;
+}
+.link {
+  display: block;
   float: right;
   padding-right: 2vw;
   padding-top: 5vh;
@@ -108,7 +114,6 @@ p {
   box-shadow: 10px 10px black;
   position: relative;
   margin-left: 2vw;
-  margin-top: 20vh;
   font-size: 20px;
 }
 .settings h3 {
@@ -208,18 +213,84 @@ button:hover {
   padding: 3px 25px;
 }
 a:hover {
-  background-color: #FF4DA1;
+  background-color: #E5C8A4;
 }
 .link-github {
   display: block;
-  padding-left: 2vw;
   width: fit-content;
+  margin-left: 2vw;
 }
 
 button:hover {
-  background: #FF4DA1;
+  background: #E5C8A4;
 }
 
 button:active {
   transform: translate3d(0, 0.3em, -0.3em);;
+}
+.block {
+  border: 3px solid black;
+  border-radius: 40px;
+  box-shadow: 10px 10px black;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  font-size: 30px;
+  background-color: white;
+}
+.game-data {
+  background-image: url(./images/lines.png);
+  padding: 35px;
+}
+.game-component-1 {
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100vh;
+}
+.game-container {
+  display: flex;
+  align-items: center;
+}
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.game-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.clock {
+  font-size: 50px;
+  border: 3px solid black;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+.memory-game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #DFC9A4;
+}
+.game-component-1 > .link-game {
+  margin-left: 2vw;
 }
