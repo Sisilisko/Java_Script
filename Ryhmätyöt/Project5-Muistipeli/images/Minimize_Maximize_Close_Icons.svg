@@ -56,7 +56,7 @@
      id="layer1"
      transform="translate(-104.86342,-41.124119)">
     <rect
-       style="fill:none;fill-rule:evenodd;stroke:white;stroke-width:0.437415;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+       style="fill:none;fill-rule:evenodd;stroke:black;stroke-width:0.437415;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
        id="rect81"
        width="4.8542514"
        height="4.8542514"
@@ -64,7 +64,7 @@
        y="41.342827" />
     <path
        id="rect917"
-       style="fill:none;fill-rule:evenodd;stroke:white;stroke-width:0.437415;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+       style="fill:none;fill-rule:evenodd;stroke:black;stroke-width:0.437415;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
        d="m 105.08213,43.769955 h 4.85425"
        sodipodi:nodetypes="cc" />
     <g
@@ -73,12 +73,12 @@
        style="stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none">
       <path
          id="path920"
-         style="fill:none;fill-rule:evenodd;stroke:white;stroke-width:0.264583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+         style="fill:none;fill-rule:evenodd;stroke:black;stroke-width:0.264583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
          d="m 125.184,41.534501 2.76448,2.764478"
          sodipodi:nodetypes="cc" />
       <path
          id="path922"
-         style="fill:none;fill-rule:evenodd;stroke:white;stroke-width:0.264583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+         style="fill:none;fill-rule:evenodd;stroke:black;stroke-width:0.264583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
          d="M 127.94848,41.534501 125.184,44.298979"
          sodipodi:nodetypes="cc" />
     </g>

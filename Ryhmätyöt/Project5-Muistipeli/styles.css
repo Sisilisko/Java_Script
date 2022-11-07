@@ -30,8 +30,9 @@ a {
   text-decoration: none;
   font-size: 30px;
   display: flex;
-    align-items: center;
-    gap: 8px;
+  align-items: center;
+  gap: 8px;
+  padding: 5px;
 }
 .intro {
   width: 30vw;
@@ -40,8 +41,6 @@ a {
   border-radius: 40px;
   box-shadow: 10px 10px black;
   position: relative;
-  margin-left: 2vw;
-  margin-top: 1vh;
 }
 h1 {
   margin-bottom: 25px;
@@ -79,12 +78,13 @@ p {
 }
 .top {
   height: 7vh;
-  background-color: #FF5CA8;
+  background-color: Silver;
   border-radius: 35px 35px 0 0;
   align-items: center;
   display: flex;
   justify-content: flex-end;
   padding: 0 3vh 0 0;
+  border-bottom: 3px solid black;
 }
 
 .down {
@@ -98,7 +98,7 @@ p {
 .link-game {
   display: block;
   padding-right: 2vw;
-  padding-top: 5vh;
+  width: fit-content;
 }
 .link {
   display: block;
@@ -193,17 +193,19 @@ button {
   margin: 20px 0 0 35px;
   cursor: pointer;
   transition: transform 0.15s;
-transform-style: preserve-3d;
-position: relative;
-display: inline-block;
-cursor: pointer;
-outline: none;
-vertical-align: middle;
-
+  transform-style: preserve-3d;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  vertical-align: middle;
 
 }
+#start-button {
+  margin: 20px 0 0 0;
+}
 button:hover {
-  background-color: #FF4DA1;
+  background-color: Silver;
 }
 .links {
   border: 3px solid black;
@@ -213,7 +215,7 @@ button:hover {
   padding: 3px 25px;
 }
 a:hover {
-  background-color: #E5C8A4;
+  background-color: Silver;
 }
 .link-github {
   display: block;
@@ -222,7 +224,7 @@ a:hover {
 }
 
 button:hover {
-  background: #E5C8A4;
+  background: Silver;
 }
 
 button:active {
@@ -246,6 +248,7 @@ button:active {
 flex-direction: column;
 justify-content: space-between;
 height: 100vh;
+padding: 5vh 0;
 }
 .game-container {
   display: flex;
@@ -280,6 +283,8 @@ header {
   margin: 5px;
   position: relative;
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  border: 2px solid black;
+    border-radius: 7px;
 }
 
 .front-face,
@@ -289,7 +294,7 @@ header {
   padding: 20px;
   position: absolute;
   border-radius: 5px;
-  background: #DFC9A4;
+  background: Silver;
 }
 .game-component-1 > .link-game {
   margin-left: 2vw;
