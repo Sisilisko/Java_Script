@@ -52,6 +52,8 @@ This is my first repo at KEUDA (August, 2022)
 
 :scroll: Dokumentointi 4. projekti "TODO list": https://github.com/Viktoriia-code/Java_Script/blob/main/Ryhm%C3%A4ty%C3%B6t/Project4-TODO-list/Projekti%204%20dokumentaatio.pdf
 
+## JavaScript projects
+
 :art: MockUp 5. projekti "Muistipeli": https://github.com/Viktoriia-code/Java_Script/blob/main/Ryhm%C3%A4ty%C3%B6t/Project5-Muistipeli/mockup%20mustipeli%20projekti.pdf
 
 :atom: 5. projekti "Muistipeli":
