@@ -55,13 +55,17 @@ p {
   bottom: 15px;
   right: 10%;
 }
-#lamp {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  transform: rotate(13deg);
-  margin-left: auto;
-  margin-right: auto;
+#myCards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  padding-top: 2vh;
+  justify-content: center;
+}
+#myCards img {
   display: block;
+  height: 70px;
+  padding: 0 5px;
 }
 .welcome-block {
   background-image: url(./images/lines.png);
@@ -126,6 +130,10 @@ p {
   font-size: 28px;
   line-height: 40px;
 }
+form {
+  line-height: 50px;
+}
+form
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
     position: absolute;
@@ -135,11 +143,12 @@ p {
 [type="radio"]:not(:checked) + label
 {
     position: relative;
-    padding-left: 28px;
+    padding-left: 33px;
     cursor: pointer;
     line-height: 20px;
     display: inline-block;
     color: black;
+    font-size: 40px;
 }
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
@@ -181,9 +190,14 @@ p {
   gap: 20px;
 }
 button {
-  padding: 3px 25px;
+  font-family: 'Roboto', sans-serif;
+width: 188px;
+
+padding: 10px 25px;
+
+
   font-size: 35px;
-  font-family: 'Anton', sans-serif;
+
   text-transform: uppercase;
   background-color: white;
   border: 3px solid black;
@@ -244,9 +258,15 @@ flex-direction: column;
 justify-content: space-between;
 height: 100vh;
 padding: 5vh 0;
+width: 17%;
+    position: absolute;
 }
-.game-container {
-  display: flex;
+.game-component-2 {
+  max-width: 815px;
+    margin: 0 auto;
+    padding: 2vh 0;
+}
+#game-container {
   align-items: center;
 }
 header {
@@ -265,7 +285,7 @@ header {
   margin: 20px 10px 0 0;
   padding: 10px 25px;
 }
-.clock {
+#clock {
   font-size: 50px;
   border: 3px solid black;
   border-radius: 30px;
@@ -282,7 +302,6 @@ header {
 }
 .memory-card {
   width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
   margin: 5px;
   position: relative;
   box-shadow: 4px 4px 4px rgb(0 0 0 / 20%);
@@ -300,7 +319,7 @@ header {
 .back-face {
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 9px 20%;
   position: absolute;
   border-radius: 5px;
   background: Silver;
@@ -317,4 +336,27 @@ header {
 }
 .front-face {
   transform: rotateY(180deg);
+}
+#win-message {
+  display: none;
+  position: absolute;
+  font-size: 40px;
+  animation-name: bounceIn;
+  animation-duration: 3s;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  height: 400px;
+  width: 500px;
+  margin: 22vh auto 0 auto;
+  text-align: center;
+  padding: 30px 20px;
+  border: 3px solid black;
+  border-radius: 30px;
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 40%);
+}
+#play-again {
+  width: 280px;
 }

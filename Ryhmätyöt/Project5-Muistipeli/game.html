@@ -9,7 +9,8 @@
 
   </head>
   <body>
-    <div class="game-container">
+    <div id="win-message"></div>
+    <div id="game-container">
       <div class="game-component-1">
         <span class="link-game"><a href="index.html" id="link-to-game">
           <img src="./images/home.png" alt="" width="50">Home
@@ -28,7 +29,7 @@
           </a>
         </span>
       </div>
-      <div class="component-2">
+      <div class="game-component-2">
         <div class="game-wrapper">
           <div class="game-btn">
             <div class="btn-wrapper">
@@ -37,12 +38,11 @@
               <button type="button" name="button" id="reset-button">RESET</button>
             </div>
 
-            <div class="clock">
+            <div id="clock">
               <img src="./images/clock.png" alt="" width="40">
               <span id="timerid">00:00</span>
             </div>
           </div>
-
           <section class="memory-game">
             <div class="memory-card" data-framework="react">
               <img class="front-face" src="images/cards/react.png" alt="React">
@@ -103,6 +103,127 @@
               <img class="front-face" src="images/cards/node.png" alt="Node">
               <img class="back-face" src="images/cards/question.png" alt="Memory Card">
             </div>
+
+            <div class="memory-card" data-framework="angular">
+              <img class="front-face" src="images/cards/angular.png" alt="Angular">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="angular">
+              <img class="front-face" src="images/cards/angular.png" alt="Angular">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="bootstrap">
+              <img class="front-face" src="images/cards/bootstrap.png" alt="Bootstrap">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="bootstrap">
+              <img class="front-face" src="images/cards/bootstrap.png" alt="Bootstrap">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="git">
+              <img class="front-face" src="images/cards/git.png" alt="Git">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="git">
+              <img class="front-face" src="images/cards/git.png" alt="Git">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="github">
+              <img class="front-face" src="images/cards/github.png" alt="GitHub">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="github">
+              <img class="front-face" src="images/cards/github.png" alt="GitHub">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="java">
+              <img class="front-face" src="images/cards/java.png" alt="Java">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="java">
+              <img class="front-face" src="images/cards/java.png" alt="Java">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="office">
+              <img class="front-face" src="images/cards/office.png" alt="Office">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="office">
+              <img class="front-face" src="images/cards/office.png" alt="Office">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="php">
+              <img class="front-face" src="images/cards/php.png" alt="Php">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="php">
+              <img class="front-face" src="images/cards/php.png" alt="Php">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="python">
+              <img class="front-face" src="images/cards/python.png" alt="Python">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="python">
+              <img class="front-face" src="images/cards/python.png" alt="Python">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="redux">
+              <img class="front-face" src="images/cards/redux.png" alt="Redux">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="redux">
+              <img class="front-face" src="images/cards/redux.png" alt="Redux">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="sql">
+              <img class="front-face" src="images/cards/sql.png" alt="Sql">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="sql">
+              <img class="front-face" src="images/cards/sql.png" alt="Sql">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="teams">
+              <img class="front-face" src="images/cards/teams.png" alt="Teams">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="teams">
+              <img class="front-face" src="images/cards/teams.png" alt="Teams">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="vue">
+              <img class="front-face" src="images/cards/vue.png" alt="Vue">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="vue">
+              <img class="front-face" src="images/cards/vue.png" alt="Vue">
+              <img class="back-face" src="images/cards/question.png" alt="Memory Card">
+            </div>
+
           </section>
 
         </div>
