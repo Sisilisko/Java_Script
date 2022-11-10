@@ -1,0 +1,73 @@
+/* Start reset settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* End reset settings */
+body {
+  background: linear-gradient(to right, rgb(254, 172, 94), rgb(199, 121, 208), rgb(75, 192, 200));
+  font-family: 'Lato', sans-serif;
+
+}
+.container {
+  padding: 20px;
+}
+.info {
+  background-color: white;
+  width: fit-content;
+  position: absolute;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 20%);
+}
+h1 {
+  font-size: 1.5em;
+}
+.form-wrapper {
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: white;
+  max-width: 700px;
+  justify-content: space-between;
+  font-size: 20px;
+  display: flex;
+  line-height: 32px;
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 20%);
+  position: relative;
+}
+.contact-header {
+  color: white;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 90px;
+  left: -61px;
+  z-index: 1;
+}
+form {
+  width: fit-content;
+  padding: 20px 15px 15px 32px;
+}
+.form-img {
+  background-image: url("mac.jpg");
+  width: 40%;
+  background-size: cover;
+}
+form label {
+  width: 100px;
+}
+form input {
+  height: 25px;
+  border-radius: 5px;
+  border: 2px solid rgb(0 0 0 / 40%);
+  margin-left: 35px;
+}
+.form-wrapper img {
+  height: 350px;
+  filter: brightness(0.8);
+}
