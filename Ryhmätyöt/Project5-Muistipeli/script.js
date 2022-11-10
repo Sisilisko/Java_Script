@@ -1,6 +1,6 @@
 const cards = document.querySelectorAll('.memory-card');
 
-//start of setting the size of game
+//start of setting the SIZE of game
 var link = window.location.href;
 var size1 = /type=4x4/gi;
 var size2 = /type=4x6/gi;
@@ -33,13 +33,13 @@ function render(n) {
     }
   }
 }
+//end of setting the SIZE of game
 
-//end of setting the size of game
+/*START OF CONTROL BUTTONS*/
 const clock = document.getElementById('clock');
 var matchNumber = 0;
 var turnNumber = 0;
 
-/*START OF CONTROL BUTTONS*/
 const timer = document.getElementById('timerid');
 const btnStart = document.getElementById('start-button');
 const btnReset = document.getElementById('reset-button');
@@ -89,7 +89,7 @@ function pause(){
     mins = value.substring(0,2);
     return(secs,mins);
   }else{
-    console.log('nyt');
+    console.log('resume');
     showTimer(mins,secs);
     clock.style.background='#01DB96';
     isPause = false;
@@ -112,7 +112,7 @@ function reset(){
   turnNumber = 0;
   document.getElementById('matchNumber').innerHTML = matchNumber;
   document.getElementById('turnNumber').innerHTML = turnNumber;
-  console.log('end');
+  console.log('reset');
   cards.forEach(card => card.removeEventListener('click', flipCard));
   cards.forEach(card => card.classList.remove('flip'));
   const date = new Date();
@@ -146,6 +146,7 @@ function showTimer(){
 }
 /*END OF CONTROL BUTTONS*/
 
+/*START OF GAME FIELD*/
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
@@ -229,7 +230,9 @@ function checkWin() {
     winMessage();
   }
 }
+/*START OF GAME FIELD*/
 
+//WIN MESSAGE
 var message = document.getElementById('win-message');
 
 function winMessage() {

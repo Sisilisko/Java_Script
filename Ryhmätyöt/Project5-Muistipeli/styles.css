@@ -226,12 +226,24 @@ button:hover {
 a:hover {
   background-color: Silver;
 }
-.link-github {
-  display: block;
+.ext-links {
+  display: flex;
   width: fit-content;
-  margin-left: 2vw;
 }
-
+.wrapper-github {
+  bottom: 1vh;
+  font-family: 'Anton', sans-serif;
+  font-size: 25px;
+  position: absolute;
+}
+.keuda-link {
+  text-decoration: none;
+  align-items: center;
+  padding: 5px;
+  color: black;
+  display: inline;
+  font-size: 25px;
+}
 button:hover {
   background: Silver;
 }
@@ -257,7 +269,7 @@ button:active {
 flex-direction: column;
 justify-content: space-between;
 height: 100vh;
-padding: 5vh 0;
+padding: 5vh 0 1vh 0;
 width: 17%;
     position: absolute;
 }
@@ -265,6 +277,12 @@ width: 17%;
   max-width: 815px;
     margin: 0 auto;
     padding: 2vh 0;
+}
+.game-component-1 .wrapper-github {
+  position: static;
+  bottom: unset;
+  margin-left: 2vw;
+  width: 200%;
 }
 #game-container {
   align-items: center;
@@ -293,7 +311,7 @@ header {
 }
 .memory-game {
   width: 640px;
-  height: 640px;
+  height: 80vh;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -359,4 +377,5 @@ header {
 }
 #play-again {
   width: 280px;
+  margin: 20px 0 0 0px;
 }
