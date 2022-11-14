@@ -11,7 +11,7 @@
 }
 /* End reset settings */
 body {
-  background: linear-gradient(to right, rgb(254, 172, 94), rgb(199, 121, 208), rgb(75, 192, 200));
+  background: linear-gradient(to right, #e8cbc0, #636fa4);
   font-family: 'Lato', sans-serif;
 
 }
