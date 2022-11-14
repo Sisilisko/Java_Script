@@ -19,14 +19,14 @@ body {
   padding: 20px;
 }
 .info {
-  background-color: white;
+  background-color: #F4F3F3;
   width: fit-content;
   position: absolute;
   padding: 10px;
   box-shadow: 4px 4px 4px rgb(0 0 0 / 20%);
 }
 h1 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 .form-wrapper {
   margin: 0 auto;
@@ -36,20 +36,24 @@ h1 {
   font-size: 20px;
   display: flex;
   line-height: 32px;
-  box-shadow: 4px 4px 4px rgb(0 0 0 / 20%);
   position: relative;
+  background-color: #F4F3F3;
 }
-.contact-header {
-  color: white;
+.contact-links {
+  background-color: white;
   position: absolute;
-  transform: rotate(-90deg);
-  top: 90px;
-  left: -61px;
+  bottom: 0;
   z-index: 1;
 }
+.contact-links img {
+  width: 40px;
+}
 form {
-  width: fit-content;
-  padding: 20px 15px 15px 32px;
+  width: 97%;
+  padding: 15px 15px 0px 15px;
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 20%);
+  background-color: white;
+  margin-top: 20px;
 }
 .form-img {
   background-image: url("mac.jpg");
@@ -60,12 +64,29 @@ form label {
   width: 100px;
 }
 form input {
-  height: 25px;
+  height: 30px;
   border-radius: 5px;
   border: 2px solid rgb(0 0 0 / 40%);
-  margin-left: 35px;
+  width: 86%;
+  float: right;
+  margin-bottom: 7px;
+  width: 100%;
 }
-.form-wrapper img {
-  height: 350px;
-  filter: brightness(0.8);
+.form-container {
+  padding: 20px;
+}
+#form-inputs {
+  width: 100%;
+}
+button {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  padding: 5px 45px;
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 20%);
+}
+#send {
+  float: right;
+  background-color: #D5E8D4;
+  border: 2px solid #A6C995;
+  border-radius: 15px;
 }
