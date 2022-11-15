@@ -50,37 +50,38 @@ h3 {
 }
 .contact-links {
   display: flex;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .contact-links img {
-  width: 40px;
+  height: 40px;
 }
 form {
-  padding: 15px 20px 35px 20px;
+  padding: 15px 25px 35px 25px;
   box-shadow: 4px 4px 4px rgb(0 0 0 / 20%);
   background-color: white;
   margin-top: 10px;
   position: relative;
 }
 .form-img {
-  background-image: url("mac.jpg");
+  background-image: url("images/mac.jpg");
   width: 40%;
   background-size: cover;
-  height: 530px;
+  height: 600px;
 }
 form label {
-  width: 100px;
+  width: 80px;
 }
 form input {
   height: 30px;
   border-radius: 5px;
   border: 2px solid rgb(0 0 0 / 40%);
-  width: 86%;
   float: right;
   margin-bottom: 7px;
-  width: 100%;
+  width: 90%;
+  font-family: 'Lato', sans-serif;
+  padding: 5px;
 }
 .form-container {
   padding: 20px;
@@ -103,15 +104,26 @@ button {
   margin: 0 auto;
   display: block;
 }
-#send {
+button:active {
+  filter: brightness(0.4);
+}
+#submit-btn {
   background-color: #D0E9D5;
   border: 2px solid #87C081;
   border-radius: 15px;
+  transition: all 500ms ease;
 }
-#reset {
+#submit-btn:hover {
+  background-color: #87C081;
+}
+#reset-btn {
   background-color: #FFCCCA;
   border: 2px solid #D66966;
   border-radius: 15px;
+  transition: all 500ms ease;
+}
+#reset-btn:hover {
+  background-color: #D66966;
 }
 .btn-wrapper {
   display: flex;
@@ -124,4 +136,12 @@ button {
   position: absolute;
   font-weight: 400;
   font-size: 20px;
+}
+.contact-block span {
+  vertical-align: middle;
+}
+.contact-block {
+  line-height: 40px;
+  display: flex;
+  gap: 10px;
 }

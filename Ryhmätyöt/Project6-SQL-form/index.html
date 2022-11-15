@@ -15,50 +15,53 @@
           <h2>Let's Get Started</h2>
           <h3>Contact me to start our next project!</h3>
           <div class="contact-links">
-            <a href="mailto:beloborodova.viktoriia@gmail.com">
-              <img src="images/email.png" alt="">
-            </a>
-            <a href="https://github.com/Viktoriia-code">
-              <img src="images/github.png" alt="">
-            </a>
-            <a href="tel:123-456-7890">
-              <img src="images/phone.png" alt="">
-            </a>
+            <div class="contact-block">
+              <a href="mailto:beloborodova.viktoriia@gmail.com"><img src="images/email.png" alt="Email"></a>
+              beloborodova.viktoriia@gmail.com
+            </div>
+            <div class="contact-block">
+              <a href="https://github.com/Viktoriia-code"><img src="images/github.png" alt="Github"></a>
+              Viktoriia-code
+            </div>
+            <div class="contact-block">
+              <a href="tel:123-456-7890"><img src="images/phone.png" alt="Phone"></a>
+              123-456-7890
+            </div>
           </div>
-          <form class="" action="data.php" method="post">
+          <form class="" action="data.php" method="post" onSubmit="return formValidation(this);" onReset="return formReset(this)">
             <table id="form-inputs">
               <tr>
                 <td><label for="first-name">First name</label></td>
-                <td><input type="text" name="" value="" id="first-name"></td>
+                <td><input type="text" name="firstName" value="" id="first-name"></td>
               </tr>
               <tr>
                 <td><label for="last-name">Last name</label></td>
-                <td><input type="text" name="" value="" id="last-name"></td>
+                <td><input type="text" name="lastName" value="" id="last-name"></td>
               </tr>
               <tr>
                 <td><label for="address">Address</label></td>
-                <td><input type="text" name="" value="" id="address"></td>
+                <td><input type="text" name="address" value="" id="address"></td>
               </tr>
               <tr>
                 <td><label for="post-index">Post index</label></td>
-                <td><input type="text" name="" value="" id="post-index"></td>
+                <td><input type="text" name="index" value="" id="post-index"></td>
               </tr>
               <tr>
                 <td><label for="city">City</label></td>
-                <td><input type="text" name="" value="" id="city"></td>
+                <td><input type="text" name="city" value="" id="city"></td>
               </tr>
               <tr>
                 <td><label for="phone">Phone</label></td>
-                <td><input type="tel" name="" value="" id="phone"></td>
+                <td><input type="tel" name="phone" value="" id="phone"></td>
               </tr>
               <tr>
                 <td><label for="email">Email</label></td>
-                <td><input type="email" name="" value="" id="email"></td>
+                <td><input type="email" name="email" value="" id="email"></td>
               </tr>
             </table>
             <div class="btn-wrapper">
-              <button type="button" name="button" id="reset" class="control-btn">Reset</button>
-              <button type="button" name="button" id="send" class="control-btn">Send</button>
+              <button type="reset" name="reset" id="reset-btn" class="control-btn" value="reset">Reset</button>
+              <button type="submit" name="submit" id="submit-btn" class="control-btn" value="submit">Send</button>
             </div>
           </form>
         </div>
@@ -67,5 +70,6 @@
         © Viktoriia Beloborodova | <a href="https://www.keuda.fi/" class="keuda-link">Keuda</a>, 2022
       </div>
     </div>
+    <script src="script.js" charset="utf-8"></script>
   </body>
 </html>
