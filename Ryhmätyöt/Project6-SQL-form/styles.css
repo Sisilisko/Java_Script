@@ -28,6 +28,16 @@ body {
 h1 {
   font-size: 2em;
 }
+h2 {
+  font-weight: 400;
+  font-size: 1.8em;
+  margin: 0 0 7px 0;
+}
+h3 {
+  font-weight: 300;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
 .form-wrapper {
   margin: 0 auto;
   background-color: white;
@@ -39,20 +49,20 @@ h1 {
   background-color: #F4F3F3;
 }
 .contact-links {
-  background-color: white;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-around;
 }
 .contact-links img {
   width: 40px;
 }
 form {
-  width: 97%;
-  padding: 15px 15px 0px 15px;
+  padding: 15px 20px 35px 20px;
   box-shadow: 4px 4px 4px rgb(0 0 0 / 20%);
   background-color: white;
-  margin-top: 20px;
+  margin-top: 10px;
+  position: relative;
 }
 .form-img {
   background-image: url("mac.jpg");
@@ -74,6 +84,11 @@ form input {
 }
 .form-container {
   padding: 20px;
+  margin: 0 auto;
+  width: 55%;
+}
+h2, h3 {
+  text-align: center;
 }
 #form-inputs {
   width: 100%;
@@ -83,10 +98,30 @@ button {
   font-size: 20px;
   padding: 5px 45px;
   box-shadow: 4px 4px 4px rgb(0 0 0 / 20%);
+  font-size: 23px;
+  font-weight: 400;
+  margin: 0 auto;
+  display: block;
 }
 #send {
-  float: right;
-  background-color: #D5E8D4;
-  border: 2px solid #A6C995;
+  background-color: #D0E9D5;
+  border: 2px solid #87C081;
   border-radius: 15px;
+}
+#reset {
+  background-color: #FFCCCA;
+  border: 2px solid #D66966;
+  border-radius: 15px;
+}
+.btn-wrapper {
+  display: flex;
+  position: absolute;
+  width: 90%;
+  margin-top: 20px;
+}
+.wrapper-name {
+  bottom: 1vh;
+  position: absolute;
+  font-weight: 400;
+  font-size: 20px;
 }
