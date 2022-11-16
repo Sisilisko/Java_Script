@@ -1,3 +1,7 @@
+let lause = "Olipa kerran kana, jonka takana oli musta lakana. Pakana, sanoi kana, ja käytti niittiä hakana.";
+let sana = /(t|P)akana/g;
+console.log(lause.match(sana));
+
 function formValidation(form) {
   var firstName = form.firstName.value;
   var lastName = form.lastName.value;
