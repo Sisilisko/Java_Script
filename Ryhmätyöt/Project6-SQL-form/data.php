@@ -1,5 +1,5 @@
 <?php
-// Taking all 5 values from the form data(input)
+// Taking all 7 values from the form data(input)
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
 $address = $_POST['address'];
@@ -15,23 +15,21 @@ $email = $_POST['email'];
 $conn = mysqli_connect('localhost', 'root', '', 'db_contact');
 
 // Check connection
-if($conn === false){
-  die("ERROR: Could not connect. "
-  . mysqli_connect_error());
+if(mysqli_connect_error){
+  echo "ERROR: Failed to connect to MySQL: " . mysqli_connect_error();
 }
-
 // database insert SQL code
 $sql = mysqli_query($conn, "INSERT INTO `db_contact` VALUES ('0', '$first_name','$last_name','$address','$index','$city','$phone','$email')");
 
 // insert in database
-if(mysqli_query($conn, $sql)){
+if($sql)
+{
   echo "<h3>data stored in a database successfully."
     . " Please browse your localhost php my admin"
     . " to view the updated data</h3>";
-  } else{
+  }else{
     echo "ERROR: Hush! Sorry $sql. "
       . mysqli_error($conn);
   }
-// Close connection
-mysqli_close($conn);
+
 ?>
