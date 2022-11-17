@@ -1,11 +1,11 @@
 <?php
-
-$etu = $_POST["etunimi"];
-$suku = $_POST["sukunimi"];
-$os = $_POST["losoite"];
-$pnro = $_POST["pnro"];
-$ptp = $_POST["ptp"];
-$maa = $_POST["maa"];
+$firstName = $_POST["firstName"];
+$lastName = $_POST["lastName"];
+$address = $_POST["address"];
+$index = $_POST["index"];
+$city = $_POST["city"];
+$phone = $_POST["phone"];
+$email = $_POST["email"];
 
 $palvelin = "localhost";
 $kayttajatunnus = "root";
@@ -18,8 +18,5 @@ if (mysqli_connect_errno())
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-$vastaus = mysqli_query($yhteys, "INSERT INTO osoitteet VALUES ('$etu', '$suku', '$os', '$pnro', '$ptp', '$maa')");
-
-
-
- ?>
+$vastaus = mysqli_query($yhteys, "INSERT INTO osoitteet VALUES ('$firstName', '$lastName', '$address', '$index', '$city', '$phone', '$email')");
+?>

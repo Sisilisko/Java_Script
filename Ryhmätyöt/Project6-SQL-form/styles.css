@@ -116,13 +116,13 @@ button:active {
 #submit-btn:hover {
   background-color: #87C081;
 }
-#reset-btn {
+.reset-btn {
   background-color: #FFCCCA;
   border: 2px solid #D66966;
   border-radius: 15px;
   transition: all 500ms ease;
 }
-#reset-btn:hover {
+.reset-btn:hover {
   background-color: #D66966;
 }
 .btn-wrapper {
