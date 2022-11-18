@@ -5,7 +5,6 @@
     <title></title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="script.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="container">
@@ -29,7 +28,7 @@
               123-456-7890
             </div>
           </div>
-          <form class="" method="post" action="data.php" onSubmit="return formValidation(this);" onReset="return formClean(this)">
+          <form action="data.html" method="post" onSubmit="return formValidation(this)" onReset="return formClean(this)" id="client-form">
             <table id="form-inputs">
               <tr>
                 <td><label for="first-name">First name</label></td>
@@ -71,5 +70,6 @@
         © Viktoriia Beloborodova | <a href="https://www.keuda.fi/" class="keuda-link">Keuda</a>, 2022
       </div>
     </div>
+    <script src="script.js" charset="utf-8"></script>
   </body>
 </html>

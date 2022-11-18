@@ -49,11 +49,35 @@ function formValidation(form) {
     alert("Please enter your correct email.");
     form.email.focus();
     return false;
+  } else {
+    // Saving user datas in localStorage
+      console.log('store on submit');
+      var firstName = document.getElementById("first-name").value;
+      var lastName = document.getElementById("last-name").value;
+      var address = document.getElementById("address").value;
+      var postIndex = document.getElementById("post-index").value;
+      var city = document.getElementById("city").value;
+      var phone = document.getElementById("phone").value;
+      var key = document.getElementById("email").value;
+      const user = {
+        firstName,
+        lastName,
+        address,
+        postIndex,
+        city,
+        phone,
+      };
+      localStorage.setItem(key, JSON.stringify(user));
+      var form = document.getElementById("client-form");
+      form.addEventListener('submit', function(e) {
+  e.preventDefault();
+});
   }
 //Functio joka tarkistaa sähköpostin
   function emailIsValid (email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
   }
+
 };
 // Tyhjennetään lomake
 function formClean(form) {
@@ -62,4 +86,4 @@ function formClean(form) {
   {
     return false;
   }
-}
+};
