@@ -4,50 +4,50 @@
       "id": 1,
       "name": "Owl",
       "name_fin": "Pöllö",
-      "sound": url(https://www.freesoundslibrary.com/wp-content/uploads/2021/07/owl-sound-effect.mp3),
-      "picture": url(https://www.freesoundslibrary.com/wp-content/uploads/2021/07/owl-sound-effect.jpg)
+      "sound": "https://www.freesoundslibrary.com/wp-content/uploads/2021/07/owl-sound-effect.mp3",
+      "picture": "https://www.freesoundslibrary.com/wp-content/uploads/2021/07/owl-sound-effect.jpg"
     },
     {
       "id": 2,
       "name": "Magpie",
       "name_fin": "Harakka",
-      "sound": url(https://www.freesoundslibrary.com/wp-content/uploads/2021/09/magpie-call-sound-effect.mp3),
-      "picture": url(https://www.lintujen-äänet.net/images/harakka.jpg)
+      "sound": "https://www.freesoundslibrary.com/wp-content/uploads/2021/09/magpie-call-sound-effect.mp3",
+      "picture": "https://www.lintujen-äänet.net/images/harakka.jpg"
     },
     {
       "id": 3,
       "name": "Sparrow",
       "name_fin": "Varpunen",
-      "sound": url(https://www.freesoundslibrary.com/wp-content/uploads/2021/06/sparrow-sound-effect.mp3),
-      "picture": url(https://celebrateurbanbirds.org/wp-content/uploads/2019/05/HouseSparrow_M_and_F.jpg)
+      "sound": "https://www.freesoundslibrary.com/wp-content/uploads/2021/06/sparrow-sound-effect.mp3",
+      "picture": "https://celebrateurbanbirds.org/wp-content/uploads/2019/05/HouseSparrow_M_and_F.jpg"
     },
     {
       "id": 4,
       "name": "Robin",
       "name_fin": "Punarinta",
-      "sound": url(https://www.freesoundslibrary.com/wp-content/uploads/2021/06/robin-singing.mp3),
-      "picture": url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Erithacus_rubecula_with_cocked_head.jpg/275px-Erithacus_rubecula_with_cocked_head.jpg)
+      "sound": "https://www.freesoundslibrary.com/wp-content/uploads/2021/06/robin-singing.mp3",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Erithacus_rubecula_with_cocked_head.jpg/275px-Erithacus_rubecula_with_cocked_head.jpg"
     },
     {
       "id": 5,
       "name": "Pheasant",
       "name_fin": "Fasaani",
-      "sound": url(https://www.freesoundslibrary.com/wp-content/uploads/2021/04/pheasant-sound.mp3),
-      "picture": url(https://i1.sndcdn.com/artworks-bbN57zzoOOHsTKGn-ZYui1w-t500x500.jpg)
+      "sound": "https://www.freesoundslibrary.com/wp-content/uploads/2021/04/pheasant-sound.mp3",
+      "picture": "https://i1.sndcdn.com/artworks-bbN57zzoOOHsTKGn-ZYui1w-t500x500.jpg"
     },
     {
       "id": 6,
       "name": "Chickadee",
       "name_fin": "Tiainen",
-      "sound": url(https://www.freesoundslibrary.com/wp-content/uploads/2020/01/chickadee-song.mp3),
-      "picture": url(https://www.metroparks.com/wp-content/uploads/2020/12/chickadee-300x300.jpg)
+      "sound": "https://www.freesoundslibrary.com/wp-content/uploads/2020/01/chickadee-song.mp3",
+      "picture": "https://www.metroparks.com/wp-content/uploads/2020/12/chickadee-300x300.jpg"
     },
     {
       "id": 7,
       "name": "Cuckoo",
       "name_fin": "Käki",
-      "sound": url(https://www.freesoundslibrary.com/wp-content/uploads/2022/01/cuckoo-sound.mp3),
-      "picture": url(https://www.tunturisusi.com/kaki/kaki13i.jpg)  
+      "sound": "https://www.freesoundslibrary.com/wp-content/uploads/2022/01/cuckoo-sound.mp3",
+      "picture": "https://www.tunturisusi.com/kaki/kaki13i.jpg"
     }
   ]
 }

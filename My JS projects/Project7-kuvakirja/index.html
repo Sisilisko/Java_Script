@@ -3,22 +3,33 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
-      <h1>Forest bird sounds</h1>
-    </header>
-    <audio controls>
-  <source src="horse.ogg" type="audio/ogg">
-  <source src="horse.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-  <footer>
-    <div class="wrapper-name">
-      © Viktoriia Beloborodova | <a href="https://www.keuda.fi/" class="keuda-link">Keuda</a>, 2022
+    <div class="header-backstage"></div>
+    <div class="container">
+      <header>
+        <h1>Birdsong</h1>
+        <div class="wrapper-name">
+          © Viktoriia Beloborodova | <a href="https://www.keuda.fi/" class="keuda-link">Keuda</a>, 2022
+        </div>
+      </header>
+      <div class="bird-card">
+        <button type="button" name="button" id="next-btn">
+          NEXT
+        </button>
+        <p id="bird-name"></p>
+        <img src="" id="bird-photo" width="400"><br>
+
+        <audio id="bird-sound" src="" type="audio/mpeg" controls>
+          Your browser does not support the audio element.
+        </audio>
+      </div>
     </div>
-  </footer>
+    <div class="footer-backstage"></div>
+    <script src="script.js" charset="utf-8"></script>
   </body>
 </html>
