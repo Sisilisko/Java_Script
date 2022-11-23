@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Owl",
       "name_fin": "Pöllö",
-      "sound": "https://www.freesoundslibrary.com/wp-content/uploads/2021/07/owl-sound-effect.mp3",
+      "sound": "https://www.freesoundslibrary.com/wp-content/uploads/2020/01/great-horned-owl-call.mp3",
       "picture": "https://www.freesoundslibrary.com/wp-content/uploads/2021/07/owl-sound-effect.jpg"
     },
     {
@@ -30,10 +30,10 @@
     },
     {
       "id": 5,
-      "name": "Pheasant",
-      "name_fin": "Fasaani",
-      "sound": "https://www.freesoundslibrary.com/wp-content/uploads/2021/04/pheasant-sound.mp3",
-      "picture": "https://i1.sndcdn.com/artworks-bbN57zzoOOHsTKGn-ZYui1w-t500x500.jpg"
+      "name": "Blackbird",
+      "name_fin": "Mustarastas",
+      "sound": "https://www.freesoundslibrary.com/wp-content/uploads/2019/05/blackbird-singing.mp3",
+      "picture": "http://www.markkuruuskanen.fi/Harrastukset/Linnut/Mustarastas-K-05.jpg"
     },
     {
       "id": 6,
