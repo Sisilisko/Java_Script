@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Canban Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Canban Board</h1>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p class="modal-title">Add your task</p>
+          <input type="text" name="" value="">
+          <button type="button" name="button">Submit</button>
+          <button type="button" name="button" id="btn-cancel">Cancel</button>
+        </div>
+      </div>
+      <div class="table-wrapper">
+      <table>
+        <tr>
+          <th>Backlog
+          <img src="images/plus.png" alt="add-task" id="btn-add-backlog" class="add-task" onclick="addTask(this)"></th>
+          <th>To do
+          <img src="images/plus.png" alt="add-task" id="btn-add-to-do" class="add-task" onclick="addTask(this)"></th>
+          <th>In progress
+          <img src="images/plus.png" alt="add-task" id="btn-add-in-prog" class="add-task" onclick="addTask(this)"></th>
+          <th>Done
+          <img src="images/plus.png" alt="add-task" id="btn-add-done" class="add-task" onclick="addTask(this)"></th>
+        </tr>
+        <tr>
+          <td>
+            <div class="taskcol" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img src="images/plus.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="88">
+            </div>
+          </td>
+          <td>
+            <div class="taskcol" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+          </td>
+          <td>
+            <div class="taskcol" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          </td>
+          <td>
+            <div class="taskcol" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          </td>
+        </tr>
+      </table>
+      </div>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
