@@ -67,3 +67,5 @@ This is my first repo at KEUDA (August, 2022)
 :scroll: Dokumentointi 6. projekti "Local Storage lomake": https://github.com/Viktoriia-code/Java_Script/blob/main/Ryhm%C3%A4ty%C3%B6t/Project6-Local-Storage-form/6.projekti%20dokumentointi%20Local%20Storage%20Form.pdf
 
 :atom: 7. projekti "Äänikirja": https://viktoriia-code.github.io/Java_Script/My%20JS%20projects/Project7-kuvakirja/
+
+:atom: 8. projekti "Kanban board": https://viktoriia-code.github.io/Java_Script/My%20JS%20projects/Project8-scrumdesk/
