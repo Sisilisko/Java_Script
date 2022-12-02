@@ -85,7 +85,6 @@ td {
   border: 1px solid #888;
   max-width: 600px;
   position: relative;
-  text-align: center;
 }
 .modal-title {
   font-family: 'Lato', cursive;
@@ -107,14 +106,30 @@ td {
 .modal-content button {
   font-family: 'Lato', cursive;
   font-weight: 700;
-  font-size: 20px;
-  padding: 3px 10px;
+  font-size: 25px;
+  padding: 5px 15px;
+  border-radius: 5px;
 }
 #btn-reset {
-  color: red;
+  background-color: #FCD0CC;
+  border: 2px solid #E6A7B4;
+}
+#btn-reset:hover {
+  background-color: #FFDEDC;
+}
+#btn-reset:active {
+  background-color: #E6A7B4;
 }
 #btn-submit {
-  color: #00B158;
+  background-color: #C2E3D0;
+  border: 2px solid #8DC174;
+  float: right;
+}
+#btn-submit:hover {
+  background-color: #E3F1EA;
+}
+#btn-submit:active {
+  background-color: #8DC174;
 }
 /* The Close Button */
 .close {
