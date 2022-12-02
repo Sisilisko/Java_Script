@@ -11,6 +11,7 @@
 /* End reset settings */
 body {
   background-color: #EFEFEF;
+  font-family: 'Lato', cursive;
 }
 .container {
   max-width: 1500px;
@@ -21,7 +22,7 @@ h1 {
   font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
-  margin: 10px 0;
+  margin: 10px 0 15px 0;
 }
 .table-wrapper {
   background-color: white;
@@ -47,13 +48,16 @@ th {
 .add-task {
   position: absolute;
   right: 12px;
-  height: 35px;
-  width: 35px;
-  top: 5px;
+  height: 25px;
+  width: 25px;
+  top: 10px;
+  opacity: 0.8;
+  cursor: pointer;
 }
 .taskcol {
   min-height: 60vh;
   width: 100%;
+  padding: 15px;
 }
 td {
   border: 2px solid #E8E8E7;
@@ -106,6 +110,12 @@ td {
   font-size: 20px;
   padding: 3px 10px;
 }
+#btn-reset {
+  color: red;
+}
+#btn-submit {
+  color: #00B158;
+}
 /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -113,10 +123,45 @@ td {
   right: 20px;
   font-size: 28px;
   font-weight: bold;
+  top: 9px;
 }
 .close:hover,
 .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+.wrapper-name {
+  font-family: 'Merienda One', cursive;
+}
+.task {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 20px 12px 15px;
+  background-color: #F5F5F5;
+  border: 2px solid #EDEDEC;
+  font-weight: 700;
+  font-size: 23px;
+  border-radius: 5px;
+  cursor: move;
+  position: relative;
+}
+.task label {
+  font-style: italic;
+  cursor: move;
+}
+#div2 .task {
+  background-color: #FCD0CC;
+  border: 2px solid #E6A7B4;
+}
+#div3 .task {
+  background-color: #C5DFFE;
+  border: 2px solid #86ABD3;
+}
+#div4 .task {
+  background-color: #C2E3D0;
+  border: 2px solid #99C070;
+}
+.task .close {
+  right: 10px;
 }

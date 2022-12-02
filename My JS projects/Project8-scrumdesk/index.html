@@ -12,48 +12,48 @@
   </head>
   <body>
     <div class="container">
-      <h1>Canban Board</h1>
+      <h1>Kanban Board</h1>
       <!-- The Modal -->
       <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
           <span class="close">&times;</span>
           <p class="modal-title">Add your task</p>
-          <input type="text" name="" value="">
-          <button type="button" name="button">Submit</button>
-          <button type="button" name="button" id="btn-cancel">Cancel</button>
+          <input type="text" name="" value="" id="task-input">
+          <button type="reset" value="Reset" name="button" id="btn-reset">Reset </button>
+          <button type="button" name="button" id="btn-submit">Submit</button>
         </div>
       </div>
       <div class="table-wrapper">
       <table>
         <tr>
-          <th>Backlog
+          <th>Ideas
           <img src="images/plus.png" alt="add-task" id="btn-add-backlog" class="add-task" onclick="addTask(this)"></th>
           <th>To do
           <img src="images/plus.png" alt="add-task" id="btn-add-to-do" class="add-task" onclick="addTask(this)"></th>
-          <th>In progress
+          <th>In progress  <span id="task-prog-number">0</span>/<span id="task-number">0</span>
           <img src="images/plus.png" alt="add-task" id="btn-add-in-prog" class="add-task" onclick="addTask(this)"></th>
           <th>Done
           <img src="images/plus.png" alt="add-task" id="btn-add-done" class="add-task" onclick="addTask(this)"></th>
         </tr>
         <tr>
           <td>
-            <div class="taskcol" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-              <img src="images/plus.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="88">
-            </div>
+            <div class="taskcol" id="div1"></div>
           </td>
           <td>
-            <div class="taskcol" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-            </div>
+            <div class="taskcol" id="div2"></div>
           </td>
           <td>
-            <div class="taskcol" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="taskcol" id="div3"></div>
           </td>
           <td>
-            <div class="taskcol" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="taskcol" id="div4"></div>
           </td>
         </tr>
       </table>
+      </div>
+      <div class="wrapper-name">
+        © Viktoriia Beloborodova | <a href="https://www.keuda.fi/" class="keuda-link">Keuda</a>, 2022
       </div>
     </div>
     <script src="script.js" charset="utf-8"></script>
