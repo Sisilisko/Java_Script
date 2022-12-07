@@ -8,26 +8,16 @@ const fetchData = async () => {
   const data = await result.json();
 
   console.log(data);
+  const curWeather = data.current_weather;
+
   document.getElementById("city").innerHTML = city;
+  document.getElementById("city-info__title").innerHTML = curWeather.temperature + "°";
+  document.getElementById("city-info__subtitle").innerHTML = "updated "+ curWeather.time.slice(0,10)+" at "+curWeather.time.slice(11);
+  const weatherCode = curWeather.weathercode;
 
-  const getImage = (description) => {
-  const value = description.toLowerCase();
-
-  switch (weathercode) {
-    case "partly cloudy":
-      return "partly.png";
-    case "cloud":
-      return "cloud.png";
-    case "fog":
-      return "fog.png";
-    case "sunny":
-      return "sunny.png";
-    case "cloud":
-      return "cloud.png";
-    default:
-      return "the.png";
+  if (weatherCode == 71) {
+    document.getElementById("weather-img").src = 'img/partly.png';
   }
-};
 
 };
 
