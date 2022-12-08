@@ -16,7 +16,7 @@ const fetchData = async () => {
   const weatherCode = curWeather.weathercode;
 
   if (weatherCode == 71) {
-    document.getElementById("weather-img").src = 'img/partly.png';
+    document.getElementById("weather-img").src = 'img/snow.png';
   }
 
 };

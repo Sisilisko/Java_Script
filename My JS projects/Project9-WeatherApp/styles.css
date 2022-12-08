@@ -253,8 +253,20 @@ img {
   z-index: 1;
   padding: 18px;
   margin-top: 32px;
-  display: flex;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
   flex-wrap: wrap;
   row-gap: 20px;
   justify-content: space-between;
+}
+table {
+  width: 100%;
+  display: flex;
+}
+th {
+  display: flex;
+}
+.prop-item {
+  display: flex;
+  grid-gap: 10px;
 }
