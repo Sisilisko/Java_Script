@@ -189,7 +189,7 @@ img {
 }
 
 .city-info {
-  margin-top: 28px;
+  margin-top: 15px;
 }
 
 .city-info__subtitle {
@@ -217,8 +217,8 @@ img {
 }
 
 .icon {
-  width: 68px;
-  height: 68px;
+  width: 100px;
+  height: 100px;
 }
 
 .property {
@@ -270,3 +270,6 @@ th {
   display: flex;
   grid-gap: 10px;
 }
+.white {fill:#FFFFFF}
+.gray {fill:#E0E0E0}
+.yellow {fill:#FFEB3B}
