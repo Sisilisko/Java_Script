@@ -13,12 +13,24 @@ const fetchData = async () => {
   document.getElementById("city").innerHTML = city;
   document.getElementById("city-info__title").innerHTML = curWeather.temperature + "°";
   document.getElementById("city-info__subtitle").innerHTML = "updated "+ curWeather.time.slice(0,10)+" at "+curWeather.time.slice(11);
-  const weatherCode = curWeather.weathercode;
+  var weatherCode = curWeather.weathercode;
 
-  if (weatherCode == 71) {
-    document.getElementById("weather-img").src = 'img/snow.png';
+  if (weatherCode < 5) {
+    document.getElementById("weather-img").src = 'img/weather-icons/sun.svg';
+    document.getElementById("desc").innerHTML = "Sunny";
+  } else if (weatherCode>=5&&weatherCode<20) {
+    document.getElementById("weather-img").src = 'img/weather-icons/cloudy.svg';
+    document.getElementById("desc").innerHTML = "Cloudy";
+  } else if (weatherCode>=20&&weatherCode<70) {
+    document.getElementById("weather-img").src = 'img/weather-icons/rainy.svg';
+    document.getElementById("desc").innerHTML = "Rainy";
+  } else if (weatherCode>=70&&weatherCode<95) {
+    document.getElementById("weather-img").src = 'img/weather-icons/snow.svg';
+    document.getElementById("desc").innerHTML = "Snow";
+  } else if (weatherCode>=95) {
+    document.getElementById("weather-img").src = 'img/weather-icons/lightning.svg';
+    document.getElementById("desc").innerHTML = "Thunderstorm";
   }
-
 };
 
 fetchData();
