@@ -69,3 +69,5 @@ This is my first repo at KEUDA (August, 2022)
 :atom: 7. projekti "Äänikirja": https://viktoriia-code.github.io/Java_Script/My%20JS%20projects/Project7-kuvakirja/
 
 :atom: 8. projekti "Kanban board": https://viktoriia-code.github.io/Java_Script/My%20JS%20projects/Project8-scrumdesk/
+
+:atom: 9. projekti "Weather app": https://viktoriia-code.github.io/Java_Script/My%20JS%20projects/Project9-WeatherApp/
