@@ -11,6 +11,9 @@
     <div id="app">
       <div class="container">
             <div class="top">
+              <div type="button" name="button" id="update" onclick="fetchData()">
+                <img src="img/icons/refresh.png" alt="">
+              </div>
               <div class="city">
                 <div class="city-subtitle">Weather Today in</div>
                   <div class="city-title" id="city">
@@ -35,44 +38,8 @@
               <img src="img/icons/cloud.png" alt="cloud">
             </div>
             <div class="property-info">
-              <div class="property-info__value" id="prop-value">~</div>
+              <div class="property-info__value" id="prop-cloud">~</div>
               <div class="property-info__description">CLOUD COVER</div>
-            </div>
-          </div>
-          <div class="prop-item">
-            <div class="property-icon">
-              <img src="img/icons/humidity.png" alt="cloud">
-            </div>
-            <div class="property-info">
-              <div class="property-info__value" id="prop-value">~</div>
-              <div class="property-info__description">HUMIDITY</div>
-            </div>
-          </div>
-          <div class="prop-item">
-            <div class="property-icon">
-              <img src="img/icons/gauge.png" alt="cloud">
-            </div>
-            <div class="property-info">
-              <div class="property-info__value" id="prop-value">~</div>
-              <div class="property-info__description">PRESSURE</div>
-            </div>
-          </div>
-          <div class="prop-item">
-            <div class="property-icon">
-              <img src="img/icons/gauge.png" alt="cloud">
-            </div>
-            <div class="property-info">
-              <div class="property-info__value" id="prop-value">~</div>
-              <div class="property-info__description">PRESSURE</div>
-            </div>
-          </div>
-          <div class="prop-item">
-            <div class="property-icon">
-              <img src="img/icons/uv-index.png" alt="cloud">
-            </div>
-            <div class="property-info">
-              <div class="property-info__value" id="prop-value">~</div>
-              <div class="property-info__description">UV INDEX</div>
             </div>
           </div>
           <div class="prop-item">
@@ -80,7 +47,7 @@
               <img src="img/icons/wind.png" alt="cloud">
             </div>
             <div class="property-info">
-              <div class="property-info__value" id="prop-value">~</div>
+              <div class="property-info__value" id="prop-wind-speed">~</div>
               <div class="property-info__description">WIND SPEED</div>
             </div>
           </div>

@@ -4,7 +4,7 @@ const lon = 25.104;
 const city = "Kerava";
 
 const fetchData = async () => {
-  const result = await fetch(`${url}?latitude=${lat}&longitude=${lon}&current_weather=true&timezone=auto&daily=sunrise,sunset&hourly=temperature_2m,precipitation,rain,weathercode,relativehumidity_2m,cloudcover`);
+  const result = await fetch(`${url}?latitude=${lat}&longitude=${lon}&current_weather=true&timezone=auto&daily=sunrise,sunset,shortwave_radiation_sum&hourly=temperature_2m,surface_pressure,precipitation,rain,weathercode,relativehumidity_2m,cloudcover`);
   const data = await result.json();
 
   console.log(data);
@@ -14,6 +14,8 @@ const fetchData = async () => {
   document.getElementById("city-info__title").innerHTML = curWeather.temperature + "°";
   document.getElementById("city-info__subtitle").innerHTML = "updated "+ curWeather.time.slice(0,10)+" at "+curWeather.time.slice(11);
   var weatherCode = curWeather.weathercode;
+  document.getElementById('prop-wind-speed').innerHTML = curWeather.windspeed + " km/h";
+  document.getElementById('prop-cloud').innerHTML = data.hourly.cloudcover[167] + "%";
 
   if (weatherCode < 5) {
     document.getElementById("weather-img").src = 'img/weather-icons/sun.svg';
